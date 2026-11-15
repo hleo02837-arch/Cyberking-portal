@@ -1,18 +1,35 @@
-
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CYBERKING PORTAL</title>
 <style>
-body { background: black; color: white; text-align: center; font-family: Arial; }
-h1 { font-size: 42px; color: gold; }
-p { font-size: 20px; }
-button { background: gold; color: black; font-size: 24px; font-weight: bold; padding: 15px 30px; }
+  body { background: black; color: white; text-align: center; font-family: Arial; margin: 0; padding: 20px; }
+  h1 { color: #FFD700; font-size: 32px; margin-top: 40px; }
+  p { font-size: 18px; }
+  button { background: #FFD700; color: black; font-size: 22px; font-weight: bold; padding: 18px 30px; border: none; border-radius: 8px; margin-top: 20px; }
+  #popup { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); }
+  #box { background: #111; border: 2px solid #FFD700; margin: 80px 20px; padding: 25px; border-radius: 12px; }
+  #box h2 { color: #FFD700; }
+  #box button { background: white; font-size: 18px; padding: 12px 25px; }
 </style>
 </head>
 <body>
+
 <h1>👑 CYBERKING PORTAL 👑</h1>
 <p>Welcome King. Your portal is LIVE.</p>
-<button onclick="alert('Welcome King 👑')">ENTER PORTAL</button>
+
+<button onclick="document.getElementById('popup').style.display='block'">ENTER PORTAL</button>
+
+<div id="popup">
+  <div id="box">
+    <h2>👑 WELCOME KING 👑</h2>
+    <p>You are IN the portal!</p>
+    <p>It works now!</p>
+    <button onclick="document.getElementById('popup').style.display='none'">CLOSE</button>
+  </div>
+</div>
+
 </body>
 </html>
