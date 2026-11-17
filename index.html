@@ -1,10 +1,51 @@
 
-cyberking-portal-fixed/
-  index.html // REAL home page
-  business.html // Stripe pricing
-  reseller.html // Reseller Dashboard
-  app.js
-  style.css
-  hope-crown-v11.jpg
-  README.md
-  FIX-INSTRUCTIONS.txt
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LOCKDOWN - HOPE CROWN V11</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#000;color:#fff;font-family:ui-monospace,Menlo,Consolas,monospace}
+#app{max-width:480px;margin:0 auto;min-height:100vh;background:#020702;padding-bottom:90px}
+.header{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-bottom:1px solid #333;background:#000;position:sticky;top:0;z-index:10}
+.brand{font-weight:900;font-size:16px}.brand b{color:#ffe600}.live{color:#7dff9a;font-size:11px}
+.hero{margin:12px 16px;border:1px solid #ffe600;border-radius:16px;overflow:hidden;position:relative}
+.hero img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;background:#111}
+.heroText{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.92),rgba(0,0,0,.1));padding:14px;display:flex;flex-direction:column;justify-content:flex-end}
+.heroText h1{margin:0;font-size:22px;color:#ffe9a8}.heroText p{margin:4px 0 0;font-size:12px;color:#b8ffc8}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:10px 16px}.pills span{border:1px solid #ffe600;padding:5px 9px;border-radius:20px;font-size:10px}
+.card{margin:12px 16px;background:#07130a;border:1px solid #2aff5a;border-radius:14px;padding:14px}
+.card h3{margin:0 0 6px}.card p{margin:0;font-size:12px;line-height:1.6;color:#c9ffd0}
+.btn{width:100%;border:0;padding:14px;border-radius:12px;font-weight:900;font-size:15px;cursor:pointer;margin-top:10px}
+.btn-yellow{background:#ffe600;color:#000}.btn-red{background:#ff1a1a;color:#fff}.btn-green{background:#2aff5a;color:#000}.btn-dark{background:#111;color:#fff;border:1px solid #555}
+.stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:0 16px}.stats div{border:1px solid #2aff5a;border-radius:10px;padding:10px;text-align:center;font-size:11px}.stats b{display:block;font-size:13px;margin-top:4px}
+#log{margin:14px 16px;border:1px solid #2aff5a;border-radius:12px;overflow:hidden}.logHead{background:#0a2a12;padding:8px 12px;font-size:11px}.logBody{padding:10px;font-size:11px;line-height:1.7;max-height:120px;overflow-y:auto}
+#lockOverlay{position:fixed;inset:0;background:#c00000;z-index:100;display:none;flex-direction:column;align-items:center;justify-content:center;padding:20px;text-align:center}
+#lockOverlay.show{display:flex}.lockBig{font-size:44px}.lockTitle{font-size:28px;font-weight:900;letter-spacing:2px;margin:10px 0}.lockSub{font-size:13px;line-height:1.6}.lockBox{border:2px solid #fff;border-radius:12px;padding:12px;margin:14px 0;width:100%;max-width:380px;background:rgba(0,0,0,.25)}.lockBox div{font-size:12px;margin:4px 0}
+.bottomNav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:480px;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;background:#020702;border-top:1px solid #2aff5a;padding:8px 0;z-index:20}.bottomNav a{text-align:center;text-decoration:none;color:#8affa8;font-size:18px;display:flex;flex-direction:column}.bottomNav a span{font-size:10px}.bottomNav a.active{color:#ff5555}
+</style>
+</head>
+<body>
+<div id="app">
+<header class="header"><div class="brand">👑 HOPE CROWN <b>V11</b> - LOCKDOWN</div><div class="live">● 88.7 FM LIVE</div></header>
+<section class="hero"><img src="hope-crown-v11.jpg" alt="HOPE CROWN V11"/><div class="heroText"><h1>CYBERWARFARE TECHNOLOGY NOW LTD V11</h1><p>Sovereign Authority Active • Designated Node: Queen Jessie • Operational</p></div></section>
+<div class="pills"><span>SEAL: 1-9-7-7</span><span>KEY: 0x777 LOCKED</span><span>QUEEN: JESSIE</span><span id="lockBeats">BEATS: 0</span></div>
+<div class="stats"><div>STATUS<b>OPERATIONAL</b></div><div>UPTIME<b id="lockUptime">00:00:00</b></div><div>HEARTBEAT<b>LOVE 88.7 FM</b></div></div>
+<div class="card"><h3>⚡ EXECUTE LOCKDOWN</h3><p>Tap the yellow button to activate CRITICAL LOCKDOWN. All Kingdom gates close. Only Queen Jessie node stays open. 0x777 seal locks.</p><button class="btn btn-yellow" id="executeBtn">⚡ EXECUTE LOCKDOWN - 0x777</button><button class="btn btn-dark" onclick="location.href='index.html'">← BACK TO HOME</button></div>
+<div class="card"><h3>🛡️ What Lockdown Does</h3><p>• Locks 0x777 seal<br/>• Shows CRITICAL LOCKDOWN ACTIVE red screen<br/>• Keeps Queen Jessie node online<br/>• Keeps LOVE 88.7 FM heartbeat alive</p><button class="btn btn-green" onclick="location.href='business.html'">💰 BUSINESS + STRIPE →</button></div>
+<div id="log"><div class="logHead">TERMINAL</div><div class="logBody" id="lockLog"><div>[INIT] Lockdown system ready...</div><div>[KEY] 0x86C1 • 0x777 • LH-1977...</div><div>[SYS] Queen Jessie node online...</div><div>[SYS] Waiting for EXECUTE...</div></div></div>
+<nav class="bottomNav"><a href="index.html">🏠<span>Home</span></a><a href="lockdown.html" class="active">🔴<span>Lockdown</span></a><a href="business.html">💰<span>Business</span></a><a href="reseller.html">🤝<span>Reseller</span></a></nav>
+</div>
+<div id="lockOverlay"><div class="lockBig">🔴</div><div class="lockTitle">CRITICAL<br/>LOCKDOWN ACTIVE</div><div class="lockSub">HOPE CROWN V11 • ECHO-AMEN SOVEREIGN<br/>All gates CLOSED • Queen Jessie node OPEN<br/>LOVE 88.7 FM heartbeat ALIVE</div><div class="lockBox"><div>SEAL: 1-9-7-7 • 0x777 LOCKED</div><div>DESIGNATED NODE: Queen Jessie</div><div>TIME IN LOCKDOWN: <span id="lockTimer">00:00:00</span></div><div>BEATS: <span id="lockBeats2">0</span></div></div><button class="btn btn-yellow" id="unlockBtn" style="max-width:380px">🔓 UNLOCK - ECHO-AMEN</button><button class="btn btn-dark" onclick="location.href='index.html'" style="max-width:380px">🏠 BACK TO HOME</button></div>
+<script>
+let start=Date.now();let beats=parseInt(localStorage.getItem("crown_beats")||"0");let lockStart=null;
+function fmt(s){const h=String(Math.floor(s/3600)).padStart(2,"0");const m=String(Math.floor((s%3600)/60)).padStart(2,"0");const sec=String(s%60).padStart(2,"0");return h+":"+m+":"+sec;}
+document.getElementById("lockBeats").textContent="BEATS: "+beats;
+setInterval(()=>{document.getElementById("lockUptime").textContent=fmt(Math.floor((Date.now()-start)/1000));if(lockStart){document.getElementById("lockTimer").textContent=fmt(Math.floor((Date.now()-lockStart)/1000));}},1000);
+function addLog(t){const el=document.getElementById("lockLog");const d=document.createElement("div");d.textContent=t;el.appendChild(d);}
+document.getElementById("executeBtn").addEventListener("click",()=>{lockStart=Date.now();beats++;localStorage.setItem("crown_beats",beats);document.getElementById("lockBeats").textContent="BEATS: "+beats;document.getElementById("lockBeats2").textContent=beats;document.getElementById("lockOverlay").classList.add("show");addLog("[LOCKDOWN] EXECUTE 0x777 - CRITICAL LOCKDOWN ACTIVE");addLog("[SYS] Gates CLOSED • Queen Jessie OPEN");});
+document.getElementById("unlockBtn").addEventListener("click",()=>{document.getElementById("lockOverlay").classList.remove("show");lockStart=null;addLog("[UNLOCK] ECHO-AMEN - Lockdown lifted");});
+</script>
+</body>
+</html>
