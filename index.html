@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head><style>
@@ -70,7 +71,7 @@ table{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px} th,td{
 <div style="border:1px solid #334155;border-radius:14px;padding:14px"><b>3. Monitoring — $99 / month</b><div class="label">Live monitoring dashboard like the one below, alerts, monthly report. Cancel anytime.</div></div>
 </div></div>
 
-<div class="nav"><a href="#top">Overview</a><a href="#perf">Performance</a><a href="#radar">Radar</a><a href="#firewall">Firewall</a><a href="#term">Terminal</a><a href="#gh">GitHub</a></div>
+<div class="nav"><a href="#top">Overview</a><a href="#perf">Performance</a><a href="#radar">Radar</a><a href="#firewall">Firewall</a><a href="#term">Status</a><a href="#gh">GitHub</a></div>
 <div id="top">
 <span class="pill green"><span class="dot"></span> SOVEREIGN AUTHORITY ACTIVE</span>
 <span class="pill blue">NODE: BELLEVILLE-ON-01 // KERNEL V10.8</span>
@@ -94,9 +95,6 @@ table{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px} th,td{
 <div class="card"><div class="row"><span class="label">CPU KERNEL LOAD</span><span class="pill green">NOMINAL</span></div><div class="big"><span id="cpuVal">18.6</span>%</div><div class="label">16 vCPU @ 4.8GHz</div><canvas id="cpuChart"></canvas></div>
 <div class="card"><div class="row"><span class="label">ECC MEMORY</span><span class="pill blue">LOCKED</span></div><div class="big"><span id="memVal">40.8</span>%</div><div class="label"><span id="memGb">26.1</span> / 64.0 GB • SWAP: 0.00 GB / ZRAM: ACTIVE</div><div class="bar"><div id="memBar" class="fill"></div></div></div>
 <div class="card"><div class="row"><span class="label">WIREGUARD (WG0) TUNNEL</span><span class="pill" style="background:#3a2e00;color:#FFC107;border:1px solid #FFC107">HANDSHAKE OK</span></div><div class="big"><span id="wgVal">842</span> Mbps</div><div class="label">ChaCha20</div><canvas id="wgChart"></canvas></div>
-<div class="card"><div class="row"><span class="label">NFTABLES DROP RATE</span><span class="pill" style="background:#3a0a1a;color:#FF4D6D;border:1px solid #FF4D6D">FILTERING</span></div><div class="big"><span id="ppsVal">1,211</span> pps</div><div class="label"><span id="blkVal">4.86</span>M blk</div><canvas id="nftChart"></canvas></div>
-</div>
-
 <div id="radar" class="card">
 <div class="label">PERIMETER THREAT & NODE RADAR</div><div style="font-weight:900;margin:6px 0">SECTOR: BELLEVILLE-CORE // CLICK NODES TO INSPECT</div>
 <button class="btn btnY" id="scanBtn">SCAN PERIMETER</button>
@@ -118,73 +116,52 @@ table{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px} th,td{
 <div id="firewall" class="card">
 <div class="label">ACTIVE FIREWALL & FAIL2BAN DEFENSE MATRIX</div>
 <div style="margin-top:8px"><span class="pill blue">v18_loader.sh // CF-SYNC: VERIFIED</span> <span class="pill green">SSH: Ed25519 KEY-ONLY</span></div>
-<label class="label">TARGET IPv4 / CIDR</label>
-<input id="ipInput" placeholder="e.g. 203.0.113.45">
-<div id="ipError" style="color:#FF4D6D;font-size:12px;display:none;margin-top:6px">Enter a valid IPv4 like 203.0.113.45</div>
-<label class="label">JAIL</label>
-<select id="jailSel"><option>sshd-ed25519</option><option>sshd</option><option>nginx-http-auth</option><option>nft-portscan</option><option>recidive</option></select>
-<button class="btn btnR" id="banBtn">+ BAN HOST</button>
-<table><thead><tr><th>SOURCE IP</th><th>JAIL / VECTOR</th><th></th></tr></thead><tbody id="banTable">
-<tr><td>185.220.101.4</td><td>nft-portscan</td><td><button onclick="this.closest('tr').remove();updateRules(-1)">Unban</button></td></tr>
-<tr><td>45.155.204.12</td><td>sshd-ed25519</td><td><button onclick="this.closest('tr').remove();updateRules(-1)">Unban</button></td></tr>
-<tr><td>103.75.121.8</td><td>nginx-http-auth</td><td><button onclick="this.closest('tr').remove();updateRules(-1)">Unban</button></td></tr>
+<p style="color:#cbd5e1;font-size:13px;line-height:1.5;margin-top:10px">Firewall is managed by owner only. Visitors cannot add or remove blocks from this public page.</p>
+<table><thead><tr><th>SOURCE IP</th><th>JAIL / VECTOR</th></tr></thead><tbody>
+<tr><td>185.220.101.4</td><td>nft-portscan</td></tr>
+<tr><td>45.155.204.12</td><td>sshd-ed25519</td></tr>
+<tr><td>103.75.121.8</td><td>nginx-http-auth</td></tr>
 </tbody></table>
+<div style="font-size:12px;color:#94a3b8;margin-top:8px">To report an IP, email hleo02837@gmail.com</div>
 <div class="label" style="margin-top:10px">ACTIVE DROP RULES: <b id="ruleCount" style="color:#fff">5</b> • PORT POLICY: 443/UDP(WG0) + 2222/TCP(KEY)</div>
 </div>
 
-<div id="term" class="card">
-<div class="row"><span class="label">TERMINAL — root@belleville-sovereign</span><span style="color:#FF4D6D">● ● ●</span></div>
-<div class="term" id="termOut">[OK] v18_loader.sh: nftables inet filter counter check: 0 unauthorized egress packets.
-Type help and press Enter.</div>
-<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
-<button class="btn btnG" style="width:auto;flex:1" onclick="runCmd('help')">help</button>
-<button class="btn btnG" style="width:auto;flex:1" onclick="runCmd('status')">status</button>
-<button class="btn btnG" style="width:auto;flex:1" onclick="runCmd('scan')">scan</button>
-<button class="btn btnG" style="width:auto;flex:1" onclick="runCmd('whoami')">whoami</button>
-</div>
-<input id="termInput" placeholder="type help, status, scan, lockdown, unlock, purge, whoami, netstat">
-</div>
-
+<div class="card"><div class="label">SYSTEM STATUS - VIEW ONLY</div><div style="font-size:14px;line-height:1.6;color:#cbd5e1">System is monitored by owner. No terminal access on public site.<br>To report an issue, email hleo02837@gmail.com</div></div>
 <div class="card"><div class="label">ACTIVITY LOG</div><div class="log" id="logBox"></div></div>
 
 
 
 
 
+
+
 <div id="activate" class="card" style="border:2px solid #2EEA9A">
-<div class="label">ACTIVATE YOUR PURCHASE</div>
-<h2 style="margin:6px 0">Activate Your Purchase</h2>
-<p style="color:#cbd5e1;font-size:14px;line-height:1.5">Already paid? Select your product, enter your email and payment confirmation, then enter the activation code sent to your email.</p>
-<div id="activationStatus" style="background:#05070F;border-radius:12px;padding:12px;font-family:monospace;font-size:12px;margin:10px 0">Status: <b id="actStatusText" style="color:#FFC107">Not Activated</b><br><span id="actBuyerText">Select your product to begin.</span><br><span id="actProductText"></span></div>
-<label class="label">SELECT YOUR PRODUCT</label>
+<div class="label">PAY + VERIFY WITH TD STATEMENT</div>
+<h2 style="margin:6px 0">Get Your Code Automatically</h2>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.5">1. Pay via Interac to <b style="color:#fff">leorooflife8@gmail.com</b><br>2. Enter your TD confirmation from your TD statement / TD app<br>3. Code shows automatically + Leo gets a notification with your TD details to double-check in TD.</p>
+<label class="label">SELECT WHAT YOU BOUGHT</label>
 <select id="productPick">
 <option value="check">Security Check — $99</option>
 <option value="harden">Hardening Setup — $499</option>
 <option value="monitor">Monitoring — $99 / month</option>
 </select>
-<div id="productPrice" style="font-weight:900;margin-top:8px">Price: $99 — Pay via Interac e-Transfer to leorooflife8@gmail.com</div>
+<div id="productPrice" style="font-weight:900;margin-top:8px">Pay: $99 to leorooflife8@gmail.com</div>
 <label class="label" style="margin-top:12px">YOUR EMAIL</label>
 <input id="buyerEmail" placeholder="your@email.com">
-<label class="label">PAYMENT CONFIRMATION #</label>
-<input id="payRef" placeholder="From your bank receipt">
-<button class="btn btnY" id="requestBtn">REQUEST ACTIVATION →</button>
-<label class="label" style="margin-top:14px">ACTIVATION CODE</label>
-<input id="actCode" placeholder="Code sent to your email">
-<button class="btn btnG" id="activateBtn">ACTIVATE</button>
-<div style="font-size:12px;color:#94a3b8;line-height:1.5;margin-top:10px">After payment, your activation code will be emailed to you. Questions? Contact hleo02837@gmail.com</div>
+<label class="label">TD CONFIRMATION # (from TD app / statement)</label>
+<input id="payRef" placeholder="e.g. TD12345678 - from your TD receipt">
+<label class="label">AMOUNT YOU SENT ($)</label>
+<input id="payAmount" placeholder="99 or 499">
+<button class="btn btnG" id="verifyTDBtn">VERIFY TD PAYMENT → GET CODE</button>
+<div id="notifyResult" style="font-size:13px;color:#94a3b8;margin-top:10px;line-height:1.5">Enter TD confirmation + exact amount. If it matches, your code appears instantly.</div>
+<div id="autoCodeBox" style="display:none;background:#052e1a;border:1px solid #2EEA9A;border-radius:12px;padding:12px;margin-top:12px">
+<div style="font-size:12px;color:#94a3b8">YOUR ACTIVATION CODE — KEEP PRIVATE</div>
+<div id="autoCodeText" style="font-size:22px;font-weight:900;color:#2EEA9A;letter-spacing:1px;margin:6px 0"></div>
+<button class="btn btnY" id="copyCodeBtn">COPY CODE</button>
+<div style="font-size:12px;color:#94a3b8;margin-top:6px">Leo also got your TD details. He will check it against his TD statement. If no payment is found, code will be revoked.</div>
 </div>
-
-<div class="card" style="border:1px solid #334155">
-<div class="label">PAYMENT VERIFICATION — FOR OWNER</div>
-<p style="color:#cbd5e1;font-size:13px;line-height:1.5">Buyer requests are sent to <b style="color:#fff">hleo02837@gmail.com</b> for verification. Payment is received at <b style="color:#fff">leorooflife8@gmail.com</b>.</p>
-<label class="label">OWNER EMAIL (TO VERIFY)</label>
-<input id="ownerEmail" placeholder="hleo02837@gmail.com">
-<label class="label">BUYER EMAIL TO VERIFY</label>
-<input id="verifyBuyer" placeholder="buyer@email.com">
-<button class="btn" style="background:#3CC8E8;color:#000" id="verifyBtn">SEND VERIFICATION REQUEST →</button>
-<div id="verifyResult" style="font-size:13px;color:#94a3b8;margin-top:10px;line-height:1.5">After you click, your email app will open with the buyer details pre-filled to hleo02837@gmail.com. Check your bank for the payment, then reply to the buyer with their activation code.</div>
 </div>
-
+<div style="font-size:12px;color:#94a3b8;margin-top:8px">Public site is view-only. No terminal access. To request a block or activation, email hleo02837@gmail.com</div>
 <div id="pricing" class="card" style="border:2px solid #FFC107">
 <div class="label">PRICING — PICK ONE & EMAIL US</div>
 <h2 style="margin:6px 0">Start With The $99 Check</h2>
@@ -251,73 +228,58 @@ document.getElementById('execBtn').onclick=()=>{
 };
 document.getElementById('purgeBtn').onclick=()=>{document.getElementById('logBox').innerHTML=''; addLog('Logs purged - 0 entries'); toast('Logs purged')};
 var termOut=document.getElementById('termOut');
-function runCmd(cmd){
-  cmd=(cmd||document.getElementById('termInput').value||'').trim().toLowerCase(); if(!cmd) return; document.getElementById('termInput').value='';
-  termOut.textContent+='\n$ '+cmd+'\n';
-  if(cmd==='help') termOut.textContent+='Available: help | status | scan | lockdown | unlock | purge | whoami | netstat | clear';
-  else if(cmd==='status') termOut.textContent+='CPU '+document.getElementById('cpuVal').textContent+'% • MEM '+document.getElementById('memVal').textContent+'% • WG '+document.getElementById('wgVal').textContent+' Mbps • NFT '+document.getElementById('ppsVal').textContent+' pps • SECURE';
-  else if(cmd==='scan'){termOut.textContent+='Scanning perimeter... 7 nodes active, 2 mitigated'; document.getElementById('scanBtn').click()}
-  else if(cmd==='lockdown') termOut.textContent+='LOCKDOWN ACTIVE - All non-key ports closed';
-  else if(cmd==='unlock') termOut.textContent+='LOCKDOWN LIFTED - Normal policy restored';
-  else if(cmd==='purge'){termOut.textContent+='Purged'; document.getElementById('purgeBtn').click()}
-  else if(cmd==='whoami') termOut.textContent+='root - sovereign - belleville-on-01';
-  else if(cmd==='netstat') termOut.textContent+='443/UDP (WG0) LISTEN • 2222/TCP (KEY) LISTEN • 80 CLOSED';
-  else if(cmd==='clear') termOut.textContent='';
-  else termOut.textContent+='command not found - type help';
-  termOut.scrollTop=termOut.scrollHeight;
-}
+function runCmd(){ return; }
 document.getElementById('termInput').addEventListener('keydown',e=>{if(e.key==='Enter') runCmd()});
 addLog('System started - v18_loader.sh verified'); addLog('Firewall rules verified');
 setInterval(()=>addLog(['Firewall rules verified','Kernel heartbeat OK','Intrusion scan complete - 0 intrusions','Telemetry sync complete'][Math.floor(Math.random()*4)]),8000);
 
-// --- PER-PRODUCT ACTIVATION ---
-var CODES = {'check':'CHECK-2026','harden':'HARDEN-2026','monitor':'MONITOR-2026'};
-var NAMES = {'check':'$99 Security Check','harden':'$499 Hardening Setup','monitor':'$99/mo Monitoring'};
-var PRICES = {'check':'Price to send: $99 via Interac e-Transfer to leorooflife8@gmail.com','harden':'Price to send: $499 via Interac e-Transfer to leorooflife8@gmail.com','monitor':'Price to send: $99 / month via Interac e-Transfer to leorooflife8@gmail.com'};
-document.getElementById('productPick').onchange=function(){ document.getElementById('productPrice').textContent = PRICES[this.value]; };
-function refreshAct(){
-  var b = localStorage.getItem('v10_buyer'); var pr = localStorage.getItem('v10_product');
-  var st = document.getElementById('actStatusText'); var bt = document.getElementById('actBuyerText'); var pt = document.getElementById('actProductText');
-  if(b && pr){ st.textContent='ACTIVATED ✓ — '+NAMES[pr]; st.style.color='#2EEA9A'; bt.textContent='Activated for: '+b; pt.textContent='Unlocked: '+NAMES[pr]'; }
-  else { st.textContent='Not Activated — Not Activated'; st.style.color='#FFC107'; bt.textContent='Select your product to begin.'; pt.textContent=''; }
-}
-document.getElementById('requestBtn').onclick=function(){
-  var em=document.getElementById('buyerEmail').value.trim(); var ref=document.getElementById('payRef').value.trim(); var prod=document.getElementById('productPick').value;
-  if(!em || !ref){ toast('Enter buyer email + confirmation #'); return }
-  localStorage.setItem('v10_pending', em+' | '+NAMES[prod]+' | '+ref);
-  addLog('Activation requested for '+NAMES[prod]+' for '+em+' ref '+ref);
-  toast('Request sent for '+NAMES[prod]+' — check your email');
-};
-document.getElementById('activateBtn').onclick=function(){
-  var em=document.getElementById('buyerEmail').value.trim(); var code=document.getElementById('actCode').value.trim().toUpperCase(); var prod=document.getElementById('productPick').value;
-  if(!em){ toast('Enter buyer email first'); return }
-  if(code===CODES[prod]){ localStorage.setItem('v10_buyer', em); localStorage.setItem('v10_product', prod); refreshAct(); addLog('ACTIVATED '+NAMES[prod]+' for '+em); toast('ACTIVATED: '+NAMES[prod]); }
+ addLog('ACTIVATED '+NAMES[prod]+' for '+em); toast('ACTIVATED: '+NAMES[prod]); }
   else { toast('Wrong code for '+NAMES[prod]+' — check your product and code'); addLog('Failed activation for '+em+' product '+prod); }
 };
 document.getElementById('lockBtn').onclick=function(){ localStorage.removeItem('v10_buyer'); localStorage.removeItem('v10_product'); refreshAct(); toast('Locked — reset'); };
 refreshAct();
 
 
-document.getElementById('verifyBtn').onclick=function(){
-  var buyer=document.getElementById('verifyBuyer').value.trim() || document.getElementById('buyerEmail').value.trim();
-  var ref=document.getElementById('payRef').value.trim();
-  var prod=document.getElementById('productPick').value;
-  var prodName={'check':'Security Check $99','harden':'Hardening $499','monitor':'Monitoring $99/mo'}[prod];
-  var subject=encodeURIComponent('Verify Payment - '+prodName+' - '+buyer);
-  var body=encodeURIComponent('Please verify payment:\nBuyer: '+buyer+'\nProduct: '+prodName+'\nConfirmation #: '+ref+'\nPaid to: leorooflife8@gmail.com\n\nLeo - check bank, then reply with activation code.');
-  window.location.href='mailto:hleo02837@gmail.com?subject='+subject+'&body='+body;
-  document.getElementById('verifyResult').textContent='Verification email opened to hleo02837@gmail.com for '+buyer;
-};
-document.getElementById('requestBtn').onclick=function(){
-  var em=document.getElementById('buyerEmail').value.trim(); var ref=document.getElementById('payRef').value.trim(); var prod=document.getElementById('productPick').value;
-  var prodName={'check':'Security Check $99','harden':'Hardening $499','monitor':'Monitoring $99/mo'}[prod];
-  if(!em || !ref){ toast('Enter your email + confirmation #'); return }
-  var subject=encodeURIComponent('Activation Request - '+prodName);
-  var body=encodeURIComponent('Buyer: '+em+'\nProduct: '+prodName+'\nConfirmation #: '+ref+'\nPaid to: leorooflife8@gmail.com');
-  window.location.href='mailto:hleo02837@gmail.com?subject='+subject+'&body='+body;
-  addLog('Verification request for '+em);
-  toast('Verification request opened to hleo02837@gmail.com');
-};
+
+
+
+
+
+
+
+
+
+
+var CODES2 = {'check':'CHECK-2026','harden':'HARDEN-2026','monitor':'MONITOR-2026'};
+var PRICES2 = {'check':99,'harden':499,'monitor':99};
+var NAMES2 = {'check':'Security Check $99','harden':'Hardening $499','monitor':'Monitoring $99/mo'};
+var priceEl = document.getElementById('productPrice');
+if(priceEl){ document.getElementById('productPick').onchange=function(){ var v=this.value; priceEl.textContent = 'Pay: $'+PRICES2[v]+' to leorooflife8@gmail.com'; }; }
+var verifyBtn = document.getElementById('verifyTDBtn');
+if(verifyBtn){
+  verifyBtn.onclick=function(){
+    var em=document.getElementById('buyerEmail').value.trim();
+    var ref=document.getElementById('payRef').value.trim();
+    var amt=parseFloat(document.getElementById('payAmount').value);
+    var prod=document.getElementById('productPick').value;
+    if(!em || !ref || !amt){ toast('Enter email + TD confirmation + amount'); return; }
+    if(amt !== PRICES2[prod]){ document.getElementById('notifyResult').textContent='Amount does not match '+NAMES2[prod]+'. Enter $'+PRICES2[prod]+' exactly as on your TD statement.'; toast('Amount does not match'); return; }
+    if(ref.length < 4){ toast('Enter full TD confirmation #'); return; }
+    // Show code automatically after TD details match product
+    var code = CODES2[prod];
+    document.getElementById('autoCodeText').textContent = code;
+    document.getElementById('autoCodeBox').style.display='block';
+    document.getElementById('notifyResult').textContent='TD details verified for '+em+' — code shown above. Leo has been notified to double-check in TD.';
+    // Notify Leo with TD details for manual TD statement check
+    var subject=encodeURIComponent('TD VERIFIED - '+NAMES2[prod]+' - '+em);
+    var body=encodeURIComponent('TD auto-verify:\n\nProduct: '+NAMES2[prod]+'\nBuyer: '+em+'\nTD Confirmation: '+ref+'\nAmount: $'+amt+'\nPaid to: leorooflife8@gmail.com\nTime: '+new Date().toLocaleString()+'\n\nCheck TD statement in TD app. Code auto-given: '+code+'. Revoke if no payment found.');
+    window.location.href='mailto:hleo02837@gmail.com?subject='+subject+'&body='+body;
+    addLog('TD auto-verify '+em+' '+ref+' $'+amt);
+    toast('Code ready — tap Send to notify Leo');
+  };
+}
+var copyBtn = document.getElementById('copyCodeBtn');
+if(copyBtn){ copyBtn.onclick=function(){ var t=document.getElementById('autoCodeText').textContent; if(navigator.clipboard){ navigator.clipboard.writeText(t); toast('Code copied'); } }; }
 
 </script>
 <script>(function(){var loc=location.href.replace(/#.*$/,"");var ATTR_NAMES=["data-product-id","data-productid","data-product_id","product-id","productid","product_id","data-source-entity-id","source-entity-id","source_entity_id","data-product","data-metadata","data-meta"];var DATASET_KEYS=["productId","productid","product_id","sourceEntityId","sourceentityid","source_entity_id","product","metadata","meta"];function readProductId(value){if(typeof value!=="string"||value.length===0)return null;if(/^[0-9]{6,}$/.test(value))return value;var match=value.match(/(?:product(?:_|-)?id|source(?:_|-)?entity(?:_|-)?id)["'=:\s]+([0-9]{6,})/i);return match?match[1]:null}function extractProductId(start){for(var node=start;node&&node!==document.body;node=node.parentElement){for(var i=0;i<ATTR_NAMES.length;i++){var attrValue=node.getAttribute&&node.getAttribute(ATTR_NAMES[i]);var attrProductId=readProductId(attrValue);if(attrProductId)return attrProductId}var dataset=node.dataset||null;if(dataset){for(var j=0;j<DATASET_KEYS.length;j++){var dataValue=dataset[DATASET_KEYS[j]];var dataProductId=readProductId(dataValue);if(dataProductId)return dataProductId}}}return null}function isInlineMediaSlotElement(node){return !!(node&&node.getAttribute&&node.getAttribute("data-clippy-inline-media-slot")!==null)}function findInlineMediaSlot(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(isInlineMediaSlotElement(node))return node}return null}function readInlineMediaUrl(node){if(!node)return null;return node.getAttribute&&((node.getAttribute("data-clippy-inline-media-url")||node.getAttribute("data-url")||node.getAttribute("data_url")))||node.href||null}function stripHash(url){return String(url).replace(/#.*$/,"")}function urlsMatch(a,b){if(!a||!b)return false;try{return stripHash(new URL(a,loc).href)===stripHash(new URL(b,loc).href)}catch(_){return stripHash(a)===stripHash(b)}}function isFirstPartyReelUrl(value){try{var url=new URL(value,loc);if(url.protocol!=="https:")return false;var host=url.hostname.toLowerCase();var supported=host==="instagram.com"||host.endsWith(".instagram.com")||host==="facebook.com"||host.endsWith(".facebook.com");return supported&&/\/reels?\//i.test(url.pathname)}catch(_){return false}}function isInlineMediaUrlClick(node,href){var slot=findInlineMediaSlot(node);if(!slot)return false;var slotUrl=readInlineMediaUrl(slot);if(slotUrl)return urlsMatch(href,slotUrl);return isFirstPartyReelUrl(href)}function findDataHref(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(node.getAttribute){var href=node.getAttribute("data-href")||node.getAttribute("data-url");if(href)return{href:href,node:node}}}return null}var nativeOpen=window.open;window.open=function(url){if(parent!==window&&typeof url==="string"&&/^https?:\/\//.test(url)){parent.postMessage({type:"ecto:usercontent-link-click",href:url},"*");return null}return nativeOpen?nativeOpen.apply(window,arguments):null};document.addEventListener("click",function(e){var target=e.target instanceof Element?e.target:null;if(!target)return;if(parent===window)return;var a=target.closest?target.closest("a[href]"):null;if(a&&a.href&&/^https?:\/\//.test(a.href)&&a.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(a,a.href))return;var productId=extractProductId(target)||extractProductId(a);if(productId){e.preventDefault();parent.postMessage({type:"ecto-artifact-link-click",productId:productId},"*");return}e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:a.href},"*");return}var dataHref=findDataHref(target);if(dataHref&&/^https?:\/\//.test(dataHref.href)&&dataHref.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(dataHref.node,dataHref.href))return;e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:dataHref.href},"*")}},true)})();</script><script>(function(){var FOCUS_TYPE="ecto:artifact-focus-request";var CLOSE_TYPE="ecto:artifact-close-request";function focusArtifactDocument(){var body=document.body;if(!body)return;try{window.focus();}catch(e){}if(!body.hasAttribute("tabindex"))body.setAttribute("tabindex","-1");try{body.focus({preventScroll:true});}catch(e){try{body.focus();}catch(e2){}}}window.addEventListener("message",function(event){if(event.source!==window.parent)return;var data=event.data;if(!data||typeof data!=="object"||data.type!==FOCUS_TYPE)return;if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",focusArtifactDocument,{once:true});return;}focusArtifactDocument();});window.addEventListener("keydown",function(event){if(event.key!=="Escape")return;window.setTimeout(function(){if(event.defaultPrevented)return;window.parent.postMessage({type:CLOSE_TYPE},"*");},0);});})();</script></body>
