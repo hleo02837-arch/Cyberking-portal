@@ -24,7 +24,7 @@
 </style>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CYBERWARFARE TECHNOLOGY NOW LTD - V10 LIVE DASHBOARD</title>
+<title>CYBERWARFARE TECHNOLOGY NOW LTD - V10 LIVE DASHBOARD • SMALL BUSINESS SECURITY</title>
 <style>
 *{box-sizing:border-box} body{margin:0;background:#05070F;color:#fff;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding:16px}
 .wrap{max-width:520px;margin:0 auto}
@@ -54,12 +54,28 @@ table{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px} th,td{
 </head>
 <body>
 <div class="wrap">
+
+<div style="background:#FFC107;color:#000;border-radius:20px;padding:20px;margin:10px 0;text-align:center">
+<div style="font-family:monospace;font-size:11px;letter-spacing:1px">BELLEVILLE • SMALL BUSINESS SECURITY</div>
+<h2 style="margin:8px 0;font-size:26px;line-height:1.1">We Protect Small Business<br>Websites From Getting Hacked.</h2>
+<p style="margin:0;font-size:14px;line-height:1.5">Security check, hardening & live monitoring — built in Belleville, Ontario.</p>
+<a href="#pricing" style="display:block;background:#000;color:#FFC107;text-decoration:none;padding:14px;border-radius:12px;font-weight:900;margin-top:14px">SEE PRICING & BOOK →</a>
+<a href="mailto:leorooflife8@gmail.com?subject=Security Check for my business" style="display:block;background:#fff;color:#000;text-decoration:none;padding:12px;border-radius:12px;font-weight:800;margin-top:8px">EMAIL US TO BOOK</a>
+<div style="font-size:12px;margin-top:10px">Local Support • Belleville, Ontario</div>
+</div>
+<div class="card"><div class="label">WHAT WE DO</div>
+<div style="display:grid;gap:10px;margin-top:10px">
+<div style="border:1px solid #334155;border-radius:14px;padding:14px"><b>1. Security Check — $99</b><div class="label">We scan your website, check SSL, passwords, updates, backups. You get a plain-English report + fix list in 48h.</div></div>
+<div style="border:1px solid #334155;border-radius:14px;padding:14px"><b>2. Hardening Setup — $499 one-time</b><div class="label">We lock down WordPress / Shopify / site: firewall rules, 2FA, backups, login protection.</div></div>
+<div style="border:1px solid #334155;border-radius:14px;padding:14px"><b>3. Monitoring — $99 / month</b><div class="label">Live monitoring dashboard like the one below, alerts, monthly report. Cancel anytime.</div></div>
+</div></div>
+
 <div class="nav"><a href="#top">Overview</a><a href="#perf">Performance</a><a href="#radar">Radar</a><a href="#firewall">Firewall</a><a href="#term">Terminal</a><a href="#gh">GitHub</a></div>
 <div id="top">
 <span class="pill green"><span class="dot"></span> SOVEREIGN AUTHORITY ACTIVE</span>
 <span class="pill blue">NODE: BELLEVILLE-ON-01 // KERNEL V10.8</span>
 <h1>CYBERWARFARE<br>TECHNOLOGY<br>NOW LTD</h1>
-<div class="yellow">V10 LIVE DASHBOARD</div>
+<div class="yellow">V10 LIVE DASHBOARD • SMALL BUSINESS SECURITY</div>
 <p class="sub"><b>Director Leo Brian Hall</b> • <span class="cyan">Hall Performance LH-HYDRO</span> • <span style="color:#FFC107">Leo Tec King Belleville</span></p>
 </div>
 
@@ -131,6 +147,62 @@ Type help and press Enter.</div>
 
 <div class="card"><div class="label">ACTIVITY LOG</div><div class="log" id="logBox"></div></div>
 
+
+
+
+
+<div id="activate" class="card" style="border:2px solid #2EEA9A">
+<div class="label">ACTIVATE YOUR PURCHASE</div>
+<h2 style="margin:6px 0">Activate Your Purchase</h2>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.5">Already paid? Select your product, enter your email and payment confirmation, then enter the activation code sent to your email.</p>
+<div id="activationStatus" style="background:#05070F;border-radius:12px;padding:12px;font-family:monospace;font-size:12px;margin:10px 0">Status: <b id="actStatusText" style="color:#FFC107">Not Activated</b><br><span id="actBuyerText">Select your product to begin.</span><br><span id="actProductText"></span></div>
+<label class="label">SELECT YOUR PRODUCT</label>
+<select id="productPick">
+<option value="check">Security Check — $99</option>
+<option value="harden">Hardening Setup — $499</option>
+<option value="monitor">Monitoring — $99 / month</option>
+</select>
+<div id="productPrice" style="font-weight:900;margin-top:8px">Price: $99 — Pay via Interac e-Transfer to leorooflife8@gmail.com</div>
+<label class="label" style="margin-top:12px">YOUR EMAIL</label>
+<input id="buyerEmail" placeholder="your@email.com">
+<label class="label">PAYMENT CONFIRMATION #</label>
+<input id="payRef" placeholder="From your bank receipt">
+<button class="btn btnY" id="requestBtn">REQUEST ACTIVATION →</button>
+<label class="label" style="margin-top:14px">ACTIVATION CODE</label>
+<input id="actCode" placeholder="Code sent to your email">
+<button class="btn btnG" id="activateBtn">ACTIVATE</button>
+<div style="font-size:12px;color:#94a3b8;line-height:1.5;margin-top:10px">After payment, your activation code will be emailed to you. Questions? Contact hleo02837@gmail.com</div>
+</div>
+
+<div class="card" style="border:1px solid #334155">
+<div class="label">PAYMENT VERIFICATION — FOR OWNER</div>
+<p style="color:#cbd5e1;font-size:13px;line-height:1.5">Buyer requests are sent to <b style="color:#fff">hleo02837@gmail.com</b> for verification. Payment is received at <b style="color:#fff">leorooflife8@gmail.com</b>.</p>
+<label class="label">OWNER EMAIL (TO VERIFY)</label>
+<input id="ownerEmail" placeholder="hleo02837@gmail.com">
+<label class="label">BUYER EMAIL TO VERIFY</label>
+<input id="verifyBuyer" placeholder="buyer@email.com">
+<button class="btn" style="background:#3CC8E8;color:#000" id="verifyBtn">SEND VERIFICATION REQUEST →</button>
+<div id="verifyResult" style="font-size:13px;color:#94a3b8;margin-top:10px;line-height:1.5">After you click, your email app will open with the buyer details pre-filled to hleo02837@gmail.com. Check your bank for the payment, then reply to the buyer with their activation code.</div>
+</div>
+
+<div id="pricing" class="card" style="border:2px solid #FFC107">
+<div class="label">PRICING — PICK ONE & EMAIL US</div>
+<h2 style="margin:6px 0">Start With The $99 Check</h2>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.5">Most Belleville shops, salons, restaurants & trades need this first. Fast, affordable, no tech jargon.</p>
+<a href="mailto:leorooflife8@gmail.com?subject=I want the $99 Security Check" style="display:block;background:#FFC107;color:#000;text-align:center;text-decoration:none;padding:14px;border-radius:12px;font-weight:900">BOOK THE $99 CHECK →</a>
+
+<div style="background:#0a2e22;border:1px solid #2EEA9A;border-radius:14px;padding:16px;margin-top:14px;text-align:center">
+<div class="label" style="color:#2EEA9A">PAY IN 30 SECONDS — INTERAC E-TRANSFER</div>
+<div style="font-size:18px;font-weight:900;margin:8px 0">leorooflife8@gmail.com</div>
+<div style="font-size:13px;color:#cbd5e1;line-height:1.5">Auto-Deposit ON — no password needed.<br>Send $99 for Security Check, put your business name in the message.</div>
+<button onclick="navigator.clipboard.writeText('leorooflife8@gmail.com');this.textContent='COPIED ✓'" style="margin-top:10px;background:#2EEA9A;color:#000;border:0;padding:12px 16px;border-radius:10px;font-weight:900;width:100%;cursor:pointer">COPY EMAIL FOR E-TRANSFER</button>
+<div style="font-size:12px;color:#94a3b8;margin-top:8px">1. Open your banking app → Interac e-Transfer → Send<br>2. To: leorooflife8@gmail.com • Amount: $99<br>3. Message: Your business name + “$99 Check”</div>
+</div>
+
+<div class="label" style="margin-top:12px">Secure checkout via Interac e-Transfer. No card needed.</div>
+
+</div>
+
 <div id="gh" class="card">
 <div class="label">GITHUB</div><h2 style="margin:6px 0">Your Repos</h2>
 <div style="border:1px solid #334155;border-radius:14px;padding:14px;margin:8px 0"><b>crown-v11-license</b><div class="label">CROWN V11 - GREEN WOLVES NODE • Rust</div><a href="https://github.com/hleo02837-arch/crown-v11-license" target="_blank" style="color:#3CC8E8">OPEN ON GITHUB →</a></div>
@@ -197,6 +269,56 @@ function runCmd(cmd){
 document.getElementById('termInput').addEventListener('keydown',e=>{if(e.key==='Enter') runCmd()});
 addLog('System started - v18_loader.sh verified'); addLog('Firewall rules verified');
 setInterval(()=>addLog(['Firewall rules verified','Kernel heartbeat OK','Intrusion scan complete - 0 intrusions','Telemetry sync complete'][Math.floor(Math.random()*4)]),8000);
+
+// --- PER-PRODUCT ACTIVATION ---
+var CODES = {'check':'CHECK-2026','harden':'HARDEN-2026','monitor':'MONITOR-2026'};
+var NAMES = {'check':'$99 Security Check','harden':'$499 Hardening Setup','monitor':'$99/mo Monitoring'};
+var PRICES = {'check':'Price to send: $99 via Interac e-Transfer to leorooflife8@gmail.com','harden':'Price to send: $499 via Interac e-Transfer to leorooflife8@gmail.com','monitor':'Price to send: $99 / month via Interac e-Transfer to leorooflife8@gmail.com'};
+document.getElementById('productPick').onchange=function(){ document.getElementById('productPrice').textContent = PRICES[this.value]; };
+function refreshAct(){
+  var b = localStorage.getItem('v10_buyer'); var pr = localStorage.getItem('v10_product');
+  var st = document.getElementById('actStatusText'); var bt = document.getElementById('actBuyerText'); var pt = document.getElementById('actProductText');
+  if(b && pr){ st.textContent='ACTIVATED ✓ — '+NAMES[pr]; st.style.color='#2EEA9A'; bt.textContent='Activated for: '+b; pt.textContent='Unlocked: '+NAMES[pr]'; }
+  else { st.textContent='Not Activated — Not Activated'; st.style.color='#FFC107'; bt.textContent='Select your product to begin.'; pt.textContent=''; }
+}
+document.getElementById('requestBtn').onclick=function(){
+  var em=document.getElementById('buyerEmail').value.trim(); var ref=document.getElementById('payRef').value.trim(); var prod=document.getElementById('productPick').value;
+  if(!em || !ref){ toast('Enter buyer email + confirmation #'); return }
+  localStorage.setItem('v10_pending', em+' | '+NAMES[prod]+' | '+ref);
+  addLog('Activation requested for '+NAMES[prod]+' for '+em+' ref '+ref);
+  toast('Request sent for '+NAMES[prod]+' — check your email');
+};
+document.getElementById('activateBtn').onclick=function(){
+  var em=document.getElementById('buyerEmail').value.trim(); var code=document.getElementById('actCode').value.trim().toUpperCase(); var prod=document.getElementById('productPick').value;
+  if(!em){ toast('Enter buyer email first'); return }
+  if(code===CODES[prod]){ localStorage.setItem('v10_buyer', em); localStorage.setItem('v10_product', prod); refreshAct(); addLog('ACTIVATED '+NAMES[prod]+' for '+em); toast('ACTIVATED: '+NAMES[prod]); }
+  else { toast('Wrong code for '+NAMES[prod]+' — check your product and code'); addLog('Failed activation for '+em+' product '+prod); }
+};
+document.getElementById('lockBtn').onclick=function(){ localStorage.removeItem('v10_buyer'); localStorage.removeItem('v10_product'); refreshAct(); toast('Locked — reset'); };
+refreshAct();
+
+
+document.getElementById('verifyBtn').onclick=function(){
+  var buyer=document.getElementById('verifyBuyer').value.trim() || document.getElementById('buyerEmail').value.trim();
+  var ref=document.getElementById('payRef').value.trim();
+  var prod=document.getElementById('productPick').value;
+  var prodName={'check':'Security Check $99','harden':'Hardening $499','monitor':'Monitoring $99/mo'}[prod];
+  var subject=encodeURIComponent('Verify Payment - '+prodName+' - '+buyer);
+  var body=encodeURIComponent('Please verify payment:\nBuyer: '+buyer+'\nProduct: '+prodName+'\nConfirmation #: '+ref+'\nPaid to: leorooflife8@gmail.com\n\nLeo - check bank, then reply with activation code.');
+  window.location.href='mailto:hleo02837@gmail.com?subject='+subject+'&body='+body;
+  document.getElementById('verifyResult').textContent='Verification email opened to hleo02837@gmail.com for '+buyer;
+};
+document.getElementById('requestBtn').onclick=function(){
+  var em=document.getElementById('buyerEmail').value.trim(); var ref=document.getElementById('payRef').value.trim(); var prod=document.getElementById('productPick').value;
+  var prodName={'check':'Security Check $99','harden':'Hardening $499','monitor':'Monitoring $99/mo'}[prod];
+  if(!em || !ref){ toast('Enter your email + confirmation #'); return }
+  var subject=encodeURIComponent('Activation Request - '+prodName);
+  var body=encodeURIComponent('Buyer: '+em+'\nProduct: '+prodName+'\nConfirmation #: '+ref+'\nPaid to: leorooflife8@gmail.com');
+  window.location.href='mailto:hleo02837@gmail.com?subject='+subject+'&body='+body;
+  addLog('Verification request for '+em);
+  toast('Verification request opened to hleo02837@gmail.com');
+};
+
 </script>
 <script>(function(){var loc=location.href.replace(/#.*$/,"");var ATTR_NAMES=["data-product-id","data-productid","data-product_id","product-id","productid","product_id","data-source-entity-id","source-entity-id","source_entity_id","data-product","data-metadata","data-meta"];var DATASET_KEYS=["productId","productid","product_id","sourceEntityId","sourceentityid","source_entity_id","product","metadata","meta"];function readProductId(value){if(typeof value!=="string"||value.length===0)return null;if(/^[0-9]{6,}$/.test(value))return value;var match=value.match(/(?:product(?:_|-)?id|source(?:_|-)?entity(?:_|-)?id)["'=:\s]+([0-9]{6,})/i);return match?match[1]:null}function extractProductId(start){for(var node=start;node&&node!==document.body;node=node.parentElement){for(var i=0;i<ATTR_NAMES.length;i++){var attrValue=node.getAttribute&&node.getAttribute(ATTR_NAMES[i]);var attrProductId=readProductId(attrValue);if(attrProductId)return attrProductId}var dataset=node.dataset||null;if(dataset){for(var j=0;j<DATASET_KEYS.length;j++){var dataValue=dataset[DATASET_KEYS[j]];var dataProductId=readProductId(dataValue);if(dataProductId)return dataProductId}}}return null}function isInlineMediaSlotElement(node){return !!(node&&node.getAttribute&&node.getAttribute("data-clippy-inline-media-slot")!==null)}function findInlineMediaSlot(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(isInlineMediaSlotElement(node))return node}return null}function readInlineMediaUrl(node){if(!node)return null;return node.getAttribute&&((node.getAttribute("data-clippy-inline-media-url")||node.getAttribute("data-url")||node.getAttribute("data_url")))||node.href||null}function stripHash(url){return String(url).replace(/#.*$/,"")}function urlsMatch(a,b){if(!a||!b)return false;try{return stripHash(new URL(a,loc).href)===stripHash(new URL(b,loc).href)}catch(_){return stripHash(a)===stripHash(b)}}function isFirstPartyReelUrl(value){try{var url=new URL(value,loc);if(url.protocol!=="https:")return false;var host=url.hostname.toLowerCase();var supported=host==="instagram.com"||host.endsWith(".instagram.com")||host==="facebook.com"||host.endsWith(".facebook.com");return supported&&/\/reels?\//i.test(url.pathname)}catch(_){return false}}function isInlineMediaUrlClick(node,href){var slot=findInlineMediaSlot(node);if(!slot)return false;var slotUrl=readInlineMediaUrl(slot);if(slotUrl)return urlsMatch(href,slotUrl);return isFirstPartyReelUrl(href)}function findDataHref(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(node.getAttribute){var href=node.getAttribute("data-href")||node.getAttribute("data-url");if(href)return{href:href,node:node}}}return null}var nativeOpen=window.open;window.open=function(url){if(parent!==window&&typeof url==="string"&&/^https?:\/\//.test(url)){parent.postMessage({type:"ecto:usercontent-link-click",href:url},"*");return null}return nativeOpen?nativeOpen.apply(window,arguments):null};document.addEventListener("click",function(e){var target=e.target instanceof Element?e.target:null;if(!target)return;if(parent===window)return;var a=target.closest?target.closest("a[href]"):null;if(a&&a.href&&/^https?:\/\//.test(a.href)&&a.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(a,a.href))return;var productId=extractProductId(target)||extractProductId(a);if(productId){e.preventDefault();parent.postMessage({type:"ecto-artifact-link-click",productId:productId},"*");return}e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:a.href},"*");return}var dataHref=findDataHref(target);if(dataHref&&/^https?:\/\//.test(dataHref.href)&&dataHref.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(dataHref.node,dataHref.href))return;e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:dataHref.href},"*")}},true)})();</script><script>(function(){var FOCUS_TYPE="ecto:artifact-focus-request";var CLOSE_TYPE="ecto:artifact-close-request";function focusArtifactDocument(){var body=document.body;if(!body)return;try{window.focus();}catch(e){}if(!body.hasAttribute("tabindex"))body.setAttribute("tabindex","-1");try{body.focus({preventScroll:true});}catch(e){try{body.focus();}catch(e2){}}}window.addEventListener("message",function(event){if(event.source!==window.parent)return;var data=event.data;if(!data||typeof data!=="object"||data.type!==FOCUS_TYPE)return;if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",focusArtifactDocument,{once:true});return;}focusArtifactDocument();});window.addEventListener("keydown",function(event){if(event.key!=="Escape")return;window.setTimeout(function(){if(event.defaultPrevented)return;window.parent.postMessage({type:CLOSE_TYPE},"*");},0);});})();</script></body>
 </html>
