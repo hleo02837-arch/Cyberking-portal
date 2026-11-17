@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Cyberking Portal</title>
-</head>
-<body style="background:black;color:white;text-align:center;padding-top:100px;font-family:sans-serif">
-<h1>👑 CYBERKING PORTAL 👑</h1>
-<p>Welcome King. Your portal is LIVE.</p>
-<button onclick="alert('WELCOME KING! Portal Activated 👑')" style="padding:15px 30px;font-size:20px;background:gold;border:none;border-radius:10px;cursor:pointer">ENTER PORTAL</button>
-</body>
-</html>
+
+<div id="splash">
+  <div class="splashCrown">👑</div>
+  <div class="splashTitle">CROWN V11</div>
+  <div class="splashEcho">ECHO-AMEN</div>
+  <div class="splashBar"><div id="splashFill"></div></div>
+  <div id="splashPct">0%</div>
+  <div id="splashStatus">LOADING KINGDOM...</div>
+</div>
