@@ -1,6 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head><style>
+<head><style>
 @font-face {
   font-family: "Optimistic";
   font-style: normal;
@@ -22,252 +23,291 @@
   font-family: "Optimistic Mono", ui-monospace, monospace;
 }
 </style>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <title>HOPE CROWN V11 — Small Business Protection</title>
-    <style>*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Inter,Arial,sans-serif;background:#f4f7f5;color:#0f1f16;line-height:1.5}body.gold{background:#fffaf0}body.blue{background:#eef5ff}body.purple{background:#f7f2ff}body.red{background:#fff2f2}a{color:inherit}.wrap{max-width:440px;margin:0 auto;padding-bottom:96px}.top{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #e2e8e4;display:flex;justify-content:space-between;align-items:center;padding:12px 16px}.logo{font-weight:800;font-size:15px;letter-spacing:-.2px}.logo b{color:#00a651}.live{font-size:12px;font-weight:700;background:#e6f9ee;color:#067a3d;padding:5px 9px;border-radius:999px}.hero{margin:14px 16px;background:#0f2e1e;color:#fff;border-radius:20px;padding:20px;position:relative;overflow:hidden}.hero h1{font-size:32px;line-height:1.05;margin:8px 0;letter-spacing:-1px}.hero p{color:#c8e6d5;font-size:14px;margin:0}.pill{display:inline-block;background:#00c853;color:#00220f;font-size:11px;font-weight:800;padding:5px 9px;border-radius:999px;letter-spacing:.6px}.castle{margin:14px 16px;background:#fff;border:1px solid #e2e8e4;border-radius:18px;padding:16px;display:flex;gap:14px;align-items:center}.castleIcon{font-size:38px}.castle h3{margin:0;font-size:16px}.castle p{margin:4px 0 0;font-size:13px;color:#5b6b60}.colors{display:flex;gap:8px;justify-content:center;padding:4px 16px 10px}.colors button{width:36px;height:36px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px #d0d8d2;cursor:pointer;font-size:16px}.colors button.active{box-shadow:0 0 0 2px #00a651,0 4px 10px rgba(0,0,0,.12)}.card{margin:12px 16px;background:#fff;border:1px solid #e2e8e4;border-radius:18px;padding:16px}.card h3{margin:0 0 6px;font-size:17px}.card p{margin:0;font-size:13.5px;color:#4a5a50}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.mini{background:#f4f7f5;border-radius:12px;padding:12px}.mini b{font-size:14px}.mini span{font-size:12px;color:#5b6b60;display:block}.btn{width:100%;border:0;padding:13px;border-radius:12px;font-weight:800;cursor:pointer;margin-top:10px;font-size:14px}.btn-green{background:#00c853;color:#00220f}.btn-dark{background:#0f2e1e;color:#fff}.btn-light{background:#eef2ef;color:#0f1f16}.btn-yellow{background:#ffe600;color:#111}.lampRow{display:flex;align-items:center;gap:12px}.lampDot{width:44px;height:44px;border-radius:50%;background:#e6f9ee;display:flex;align-items:center;justify-content:center;font-size:22px}.tabs{display:flex;gap:6px;padding:0 16px}.tabs button{flex:1;padding:10px 4px;border:1px solid #e2e8e4;background:#fff;border-radius:11px;font-weight:700;font-size:12px;cursor:pointer}.tabs button.active{background:#0f2e1e;color:#fff}.pg{display:none}.pg.show{display:block}.price{font-size:30px;font-weight:800;letter-spacing:-.5px}.price small{font-size:13px;color:#6a7a70;font-weight:500}.list{font-size:13.5px;color:#4a5a50;line-height:1.7;margin:10px 0 0}.chart{display:flex;align-items:flex-end;gap:8px;height:120px;margin-top:12px}.col{flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:4px;align-items:center}.bar{width:100%;border-radius:7px 7px 0 0}.bar.m{background:#ffe600;border:1px solid #e6c200}.bar.f{background:#00a651}.col span{font-size:10px;font-weight:700;color:#6a7a70}input[type=text]{width:100%;padding:12px;border:1px solid #d0d8d2;border-radius:11px;margin-top:8px;font-size:14px}input[type=range]{width:100%;margin-top:10px}.nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:440px;background:#fff;border-top:1px solid #e2e8e4;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;padding:8px 0;z-index:30}.nav button{border:0;background:none;font-size:18px;cursor:pointer;color:#6a7a70}.nav button span{display:block;font-size:10px;font-weight:700}.nav button.active{color:#00a651}#gate{position:fixed;inset:0;background:#0f2e1e;z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;color:#fff;text-align:center}#gate.hide{display:none}.gateCard{background:#fff;color:#111;border-radius:18px;padding:18px;width:100%;max-width:360px;text-align:left}.gateCard h3{margin:0}.gateCard p{font-size:13px;color:#5b6b60}.gateCard input{width:100%;padding:13px;border:1px solid #d0d8d2;border-radius:11px;text-align:center;font-weight:800;font-size:16px;margin:10px 0}.badge{font-size:11px;background:#e6f9ee;color:#067a3d;padding:4px 8px;border-radius:999px;font-weight:700}.kpi{display:flex;gap:10px;margin-top:12px}.kpi div{flex:1;background:#f4f7f5;border-radius:12px;padding:10px;text-align:center}.kpi b{font-size:18px;display:block}.kpi span{font-size:11px;color:#6a7a70}</style>
-  </head>
-  <body>
-    <div id="gate">
-      <div style="font-size:34px">🍏 🏰 🍏</div>
-      <h2 style="margin:10px 0 4px">HOPE CROWN V11</h2>
-      <p style="color:#c8e6d5;font-size:13px;margin:0 0 16px">Small Business Protection • Secure Access</p>
-      <div class="gateCard">
-        <span class="badge">🔐 GATEKEEPER • SECURE</span>
-        <h3 style="margin-top:10px">Enter your access code</h3>
-        <p>Your business is protected. Enter your seal to continue.</p>
-        <input id="gi" value="1-9-7-7"/>
-        <button class="btn btn-green" id="go">Unlock Protection →</button>
-        <button class="btn btn-light" id="gq">👑 Continue as Queen Jessie</button>
-        <div id="gm" style="font-size:12px;color:#b00020;text-align:center;margin-top:6px">
-        </div>
-        <p style="text-align:center;font-size:11px">Hint: 1-9-7-7 or ECHO-AMEN</p>
-      </div>
-    </div>
-    <div class="wrap">
-      <div class="top">
-        <div class="logo">HOPE CROWN <b>V11</b>
-      </div>
-      <div class="live">● PROTECTED</div>
-    </div>
-    <div class="hero">
-      <span class="pill">SMALL BUSINESS PROTECTION</span>
-      <h1>Protect your<br/>small business.<br/>Keep it green.</h1>
-      <p>Lockdown, Gatekeeper &amp; live monitoring — built for small businesses that need big protection, without the big price.</p>
-      <div class="kpi" style="margin-top:16px">
-        <div style="background:rgba(255,255,255,.12);border-radius:12px">
-          <b style="color:#fff">0x777</b>
-          <span style="color:#c8e6d5">LOCKED</span>
-        </div>
-        <div style="background:rgba(255,255,255,.12);border-radius:12px">
-          <b style="color:#fff">88.7 FM</b>
-          <span style="color:#c8e6d5">HEARTBEAT</span>
-        </div>
-        <div style="background:rgba(255,255,255,.12);border-radius:12px">
-          <b style="color:#fff">1-9-7-7</b>
-          <span style="color:#c8e6d5">SEAL</span>
-        </div>
-      </div>
-    </div>
-    <div class="castle">
-      <div class="castleIcon">🍏</div>
-      <div>
-        <h3>Granny Smith Castle • Green &amp; Secure</h3>
-        <p>Your business wall. Green means safe. Lamp lit means protected. Theme: <b id="cn">GREEN</b>
-      </p>
-    </div>
-  </div>
-  <div class="colors">
-    <button onclick="setC('')" class="active" style="background:#00c853">💚</button>
-    <button onclick="setC('gold')" style="background:#ffc107">💛</button>
-    <button onclick="setC('blue')" style="background:#2196f3">💙</button>
-    <button onclick="setC('purple')" style="background:#8a2be2">💜</button>
-    <button onclick="setC('red')" style="background:#e53935">❤️</button>
-  </div>
-  <p style="text-align:center;font-size:11px;color:#6a7a70;margin:0 0 10px;font-weight:700;letter-spacing:.5px">SAME PROTECTION • CHOOSE YOUR COLOUR</p>
-  <div class="card">
-    <div class="lampRow">
-      <div class="lampDot" id="li">💡</div>
-      <div style="flex:1">
-        <h3 style="margin:0">Protection Lamp</h3>
-        <p id="ls" style="color:#067a3d;font-weight:700">● ON — Your business is protected</p>
-      </div>
-    </div>
-    <button class="btn btn-light" id="lb">Toggle Lamp</button>
-  </div>
-  <div class="tabs">
-    <button data-p="home" class="active">Home</button>
-    <button data-p="lock">Protection</button>
-    <button data-p="biz">Pricing</button>
-    <button data-p="res">Reseller</button>
-  </div>
-  <!-- HOME -->
-  <div id="p-home" class="pg show">
-    <div class="card">
-      <h3>🛡️ What we protect</h3>
-      <p>Everything a small business needs to stay safe and open.</p>
-      <div class="grid">
-        <div class="mini">
-          <b>🏪 Your Shop</b>
-          <span>Lockdown blocks intruders</span>
-        </div>
-        <div class="mini">
-          <b>👥 Customers</b>
-          <span>Data sealed &amp; private</span>
-        </div>
-        <div class="mini">
-          <b>💰 Money</b>
-          <span>0x777 locked payments</span>
-        </div>
-        <div class="mini">
-          <b>🌐 Website</b>
-          <span>Gatekeeper access only</span>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <h3>⚡ Performance — RustPerf v0.5</h3>
-      <p>Fast, even under load. Live throughput for your protection system.</p>
-      <div style="display:flex;justify-content:space-between;margin-top:10px;font-size:13px">
-        <span>Threads: <b id="tv">8</b>
-      </span>
-      <span>Feature: <b id="fv">88,700</b> ops/s</span>
-    </div>
-    <input type="range" id="ts" min="1" max="16" value="8"/>
-    <div class="chart" id="chart">
-    </div>
-    <div style="display:flex;justify-content:space-between;font-size:11px;color:#6a7a70">
-      <span>1 Thread</span>
-      <span>2</span>
-      <span>4</span>
-      <span>8</span>
-      <span>16</span>
-    </div>
-    <p style="margin-top:10px">Main: <b id="mv">52,400</b> • Feature: <b id="fv2">88,700</b> • Gain: <b style="color:#00a651" id="gn">+69.3%</b>
-  </p>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="Queen Jessie Swagata"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<title>Queen Jessie Swagata - HOPE CROWN V11 - iPhone 5 + A17</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; padding: 0; font-family: Helvetica, Arial, sans-serif; background: #f4f7f5; color: #0f1f16; font-size: 14px; line-height: 1.4; -webkit-text-size-adjust: 100%; }
+.wrap { width: 100%; max-width: 430px; margin: 0 auto; padding-bottom: 80px; }
+.top { background: #fff; border-bottom: 1px solid #e2e8e4; padding: 10px 12px; text-align: center; }
+.logo { font-weight: bold; font-size: 15px; }
+.logo b { color: #00a651; }
+.live { display: inline-block; font-size: 11px; font-weight: bold; background: #e6f9ee; color: #067a3d; padding: 3px 8px; border-radius: 20px; margin-top: 4px; }
+.hero { margin: 10px 12px; background: #0f2e1e; color: #fff; border-radius: 18px; padding: 18px; text-align: center; }
+.hero h1 { font-size: 26px; line-height: 1.1; margin: 8px 0; }
+.hero p { color: #c8e6d5; font-size: 13px; margin: 0; }
+.pill { display: inline-block; background: #ffd700; color: #111; font-size: 11px; font-weight: bold; padding: 5px 10px; border-radius: 20px; }
+.queen { margin: 10px 12px; background: #fff; border: 2px solid #ffd700; border-radius: 16px; padding: 14px; text-align: center; }
+.queen h2 { margin: 6px 0 2px; font-size: 20px; }
+.queen p { margin: 0; font-size: 13px; color: #5b6b60; }
+.castle { margin: 10px 12px; background: #fff; border: 1px solid #e2e8e4; border-radius: 14px; padding: 12px; text-align: center; }
+.castle h3 { margin: 6px 0 2px; font-size: 15px; }
+.castle p { margin: 0; font-size: 12px; color: #5b6b60; }
+.colors { text-align: center; padding: 4px 0 8px; }
+.colors button { width: 34px; height: 34px; border-radius: 50%; border: 2px solid #fff; margin: 0 2px; font-size: 15px; }
+.card { margin: 10px 12px; background: #fff; border: 1px solid #e2e8e4; border-radius: 14px; padding: 14px; }
+.card h3 { margin: 0 0 6px; font-size: 16px; }
+.card p { margin: 0; font-size: 13px; color: #4a5a50; }
+.btn { display: block; width: 100%; border: 0; padding: 13px; border-radius: 11px; font-weight: bold; cursor: pointer; margin-top: 10px; font-size: 14px; -webkit-appearance: none; }
+.btn-green { background: #00c853; color: #00220f; }
+.btn-dark { background: #0f2e1e; color: #fff; }
+.btn-light { background: #eef2ef; color: #0f1f16; }
+.btn-yellow { background: #ffe600; color: #111; }
+.btn-gold { background: #ffd700; color: #111; }
+.tabs { text-align: center; padding: 0 12px; }
+.tabs button { width: 23%; padding: 9px 2px; border: 1px solid #e2e8e4; background: #fff; border-radius: 9px; font-weight: bold; font-size: 11px; margin: 0 1px; }
+.tabs button.active { background: #0f2e1e; color: #fff; }
+.pg { display: none; }
+.pg.show { display: block; }
+.price { font-size: 26px; font-weight: bold; }
+.price small { font-size: 12px; color: #6a7a70; font-weight: normal; }
+.list { font-size: 13px; color: #4a5a50; line-height: 1.7; margin: 8px 0 0; }
+.mini { background: #f4f7f5; border-radius: 10px; padding: 10px; margin-top: 8px; }
+.mini b { font-size: 13px; }
+.mini span { font-size: 11px; color: #5b6b60; display: block; }
+input[type=text] { width: 100%; padding: 12px; border: 1px solid #d0d8d2; border-radius: 10px; margin-top: 8px; font-size: 14px; }
+input[type=range] { width: 100%; margin-top: 10px; }
+.nav { position: fixed; bottom: 0; left: 0; width: 100%; background: #fff; border-top: 1px solid #e2e8e4; padding: 6px 0; text-align: center; z-index: 30; padding-bottom: env(safe-area-inset-bottom); }
+.nav button { width: 23%; border: 0; background: none; font-size: 18px; color: #6a7a70; }
+.nav button span { display: block; font-size: 9px; font-weight: bold; }
+.nav button.active { color: #00a651; }
+#gate { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #0f2e1e; z-index: 100; text-align: center; color: #fff; padding: 20px 12px; overflow: auto; }
+#gate.hide { display: none; }
+.gateCard { background: #fff; color: #111; border-radius: 16px; padding: 16px; width: 100%; max-width: 320px; margin: 0 auto; text-align: left; }
+.gateCard h3 { margin: 0; }
+.gateCard p { font-size: 13px; color: #5b6b60; }
+.gateCard input { width: 100%; padding: 13px; border: 1px solid #d0d8d2; border-radius: 10px; text-align: center; font-weight: bold; font-size: 16px; margin: 10px 0; }
+.badge { font-size: 11px; background: #e6f9ee; color: #067a3d; padding: 4px 8px; border-radius: 20px; font-weight: bold; }
+/* iPhone 5 - SMALL 320px */
+@media only screen and (max-width: 360px) {
+  .wrap { max-width: 320px; }
+  .hero h1 { font-size: 22px; }
+  .hero { padding: 14px; }
+  .queen h2 { font-size: 18px; }
+  .btn { padding: 12px; font-size: 13px; }
+  .gateCard { max-width: 296px; }
+}
+/* A17 - BIG MODERN - 390px to 430px + */
+@media only screen and (min-width: 390px) {
+  .wrap { max-width: 430px; }
+  .hero h1 { font-size: 32px; }
+  .hero { padding: 22px; border-radius: 22px; }
+  .card { border-radius: 18px; padding: 18px; }
+  .btn { padding: 15px; font-size: 15px; border-radius: 14px; }
+  .queen h2 { font-size: 24px; }
+}
+</style>
+</head>
+<body>
+<div id="gate">
+<div style="font-size:32px;">👑 🍏 👑</div>
+<h2 style="margin:10px 0 4px;">Queen Jessie Swagata</h2>
+<p style="color:#ffd700;font-size:13px;margin:0;">👑 JUST FOR QUEEN JESSIE SWAGATA 👑</p>
+<p style="color:#c8e6d5;font-size:12px;margin:6px 0 14px;">HOPE CROWN V11 • iPhone 5 + A17 • Small Business Protection</p>
+<div class="gateCard">
+<span class="badge">🔐 GATEKEEPER • QUEEN SEAL</span>
+<h3 style="margin-top:10px;">Welcome, Queen Jessie Swagata</h3>
+<p>Your crown is waiting. Enter your seal to open your kingdom.</p>
+<input id="gi" value="1-9-7-7"/>
+<button class="btn btn-gold" onclick="openGate();">👑 Enter My Kingdom →</button>
+<button class="btn btn-green" onclick="openGate();">💚 Unlock Protection →</button>
+<p style="text-align:center;font-size:11px;">Hint: 1-9-7-7 or ECHO-AMEN or SWAGATA</p>
+<p style="text-align:center;"><a href="#" onclick="openGate();return false;" style="color:#067a3d;font-weight:bold;">→ Tap here if button won't open</a></p>
+</div>
+</div>
+<div class="wrap">
+<div class="top">
+<div class="logo">👑 QUEEN JESSIE SWAGATA • HOPE CROWN <b>V11</b></div>
+<div class="live">● PROTECTED • iPhone 5 + A17 • FITS BOTH</div>
+</div>
+<div class="hero">
+<span class="pill">👑 JUST FOR QUEEN JESSIE SWAGATA</span>
+<h1>Queen Jessie<br/>Swagata<br/>Crowned 👑</h1>
+<p>Small Business Protection — made just for you. Fits iPhone 5 small AND A17 big.</p>
+</div>
+<div class="queen">
+<div style="font-size:44px;">👑</div>
+<h2>Queen Jessie Swagata</h2>
+<p>She is a Queen. Crowned and Sealed.<br/>Swag • Grace • Power • ECHO-AMEN<br/>Seal: 1-9-7-7 • 0x777 LOCKED</p>
+<button class="btn btn-gold" onclick="alert('Crowned and Sealed - Queen Jessie Swagata - ECHO-AMEN');">👑 Crown Queen Jessie Swagata</button>
+</div>
+<div class="castle">
+<div style="font-size:34px;">🍏 🏰 🍏</div>
+<h3>Granny Smith Castle • For Queen Swagata</h3>
+<p>Your castle wall. Green means safe. Lamp lit means protected. Theme: <b id="cn">GREEN</b></p>
+</div>
+<div class="colors">
+<button onclick="setColor('')" style="background:#00c853;">💚</button>
+<button onclick="setColor('gold')" style="background:#ffc107;">💛</button>
+<button onclick="setColor('blue')" style="background:#2196f3;">💙</button>
+<button onclick="setColor('purple')" style="background:#8a2be2;">💜</button>
+<button onclick="setColor('red')" style="background:#e53935;">❤️</button>
+</div>
+<p style="text-align:center;font-size:11px;color:#6a7a70;margin:0 0 8px;font-weight:bold;">SAME PROTECTION • QUEEN'S COLOUR</p>
+<div class="card">
+<h3>💡 Protection Lamp — For Queen</h3>
+<p id="ls" style="color:#067a3d;font-weight:bold;">● ON — Queen Jessie Swagata is protected</p>
+<button class="btn btn-light" onclick="toggleLamp();">Toggle Lamp</button>
 </div>
 <div class="card">
-  <h3>👑 Queen Jessie — Sealed</h3>
-  <p>She is a Queen. Crowned and sealed. Queen of the Kingdom. Your protection is sealed with ECHO-AMEN.</p>
+<h3>📱 Fits Both Phones</h3>
+<p class="list">
+<b>iPhone 5 (320px):</b> Small, tight, no scroll sideways — fits old screen<br/>
+<b>A17 (390-430px):</b> Big, bold, full Dynamic Island safe — fits new screen<br/>
+Same file auto-fits both. No separate app needed.
+</p>
+</div>
+<div class="tabs">
+<button data-p="home" class="active" onclick="showPage('home');">Home</button>
+<button data-p="lock" onclick="showPage('lock');">Protect</button>
+<button data-p="biz" onclick="showPage('biz');">Pricing</button>
+<button data-p="res" onclick="showPage('res');">Reseller</button>
+</div>
+<div id="p-home" class="pg show">
+<div class="card">
+<h3>🛡️ What we protect for Queen Swagata</h3>
+<p>Your shop, your customers, your money — sealed.</p>
+<div class="mini"><b>🏪 Your Shop</b><span>Lockdown blocks intruders</span></div>
+<div class="mini"><b>👥 Customers</b><span>Data sealed &amp; private</span></div>
+<div class="mini"><b>💰 Money</b><span>0x777 locked payments</span></div>
+<div class="mini"><b>👑 Your Crown</b><span>Queen Jessie Swagata seal</span></div>
+</div>
+<div class="card">
+<h3>⚡ Performance — RustPerf v0.5</h3>
+<p>Threads: <b id="tv">8</b> • Feature: <b id="fv">88,700</b> ops/s • Works on iPhone 5 + A17</p>
+<input type="range" id="ts" min="1" max="16" value="8" onchange="updatePerf();"/>
+<p>Main: <b id="mv">52,400</b> • Feature: <b id="fv2">88,700</b> • Gain: <b id="gn">+69.3%</b></p>
 </div>
 </div>
-<!-- PROTECTION -->
 <div id="p-lock" class="pg">
-  <div class="card" style="background:#00a651;color:#fff">
-    <h3 style="color:#fff">💚 GREEN LOCKDOWN — SAFE</h3>
-    <p style="color:#e6f9ee">Your business is protected. No red alert. All systems green.</p>
-    <p style="color:#fff;margin-top:10px;font-size:13px">✓ Shop Locked &nbsp; ✓ Customer Data Locked<br/>✓ Money Locked &nbsp; ✓ Gatekeeper ON</p>
-  </div>
-  <div class="card">
-    <h3>Check your seal</h3>
-    <p>Enter your protection seal to verify lockdown.</p>
-    <input type="text" id="li2" placeholder="Enter 1-9-7-7"/>
-    <button class="btn btn-green" id="lk">Verify Protection</button>
-    <div id="lm" style="text-align:center;font-weight:800;margin-top:8px">
-    </div>
-  </div>
-  <div class="card">
-    <h3>Protection checklist</h3>
-    <p class="list">✓ Gatekeeper — only sealed keys enter<br/>✓ Lamp — lit means protected<br/>✓ Castle — Granny Smith wall<br/>✓ Heartbeat — 88.7 FM monitoring<br/>✓ Seal — 1-9-7-7 ECHO-AMEN</p>
-  </div>
-</div>
-<!-- BUSINESS -->
-<div id="p-biz" class="pg">
-  <div class="card">
-    <span class="badge">MOST POPULAR FOR SMALL BUSINESS</span>
-    <h3 style="margin-top:8px">Kingdom — Small Business Protection</h3>
-    <div class="price">$77 <small>one-time</small>
-  </div>
-  <p class="list">✓ Full protection portal<br/>✓ Lockdown + Gatekeeper<br/>✓ Lamp + Castle<br/>✓ Queen Jessie seal</p>
-  <button class="btn btn-green">Get Protection — $77</button>
+<div class="card" style="background:#00a651;color:#fff;">
+<h3 style="color:#fff;">💚 GREEN LOCKDOWN — QUEEN SAFE</h3>
+<p style="color:#e6f9ee;">Queen Jessie Swagata is protected. All systems green.</p>
+<p style="color:#fff;">✓ Shop Locked &nbsp; ✓ Data Locked<br/>✓ Money Locked &nbsp; ✓ Crown Sealed</p>
 </div>
 <div class="card">
-  <h3>Sovereign</h3>
-  <div class="price">$197 <small>/ year</small>
+<h3>Check your seal, Queen</h3>
+<input type="text" id="li2" placeholder="Enter 1-9-7-7 or SWAGATA"/>
+<button class="btn btn-green" onclick="checkSeal();">Verify Protection</button>
+<div id="lm" style="text-align:center;font-weight:bold;margin-top:8px;"></div>
 </div>
-<p class="list">Everything in Kingdom + Reseller + Updates</p>
+</div>
+<div id="p-biz" class="pg">
+<div class="card">
+<span class="badge">QUEEN'S PICK • SMALL BUSINESS</span>
+<h3 style="margin-top:8px;">Kingdom — For Queen Swagata</h3>
+<div class="price">$77 <small>one-time</small></div>
+<p class="list">✓ Full protection portal<br/>✓ Lockdown + Gatekeeper<br/>✓ Lamp + Castle + Crown</p>
+<button class="btn btn-green">Get Protection — $77</button>
+</div>
+<div class="card">
+<h3>Sovereign</h3>
+<div class="price">$197 <small>/ year</small></div>
+<p>Everything + Reseller + Updates</p>
 <button class="btn btn-dark">Get Sovereign — $197</button>
 </div>
 <div class="card">
-  <h3>Empire</h3>
-  <div class="price">$777 <small>/ year</small>
+<h3>Empire</h3>
+<div class="price">$777 <small>/ year</small></div>
+<p>Everything + 30% reseller + Priority</p>
+<button class="btn btn-gold">Get Empire — $777</button>
 </div>
-<p class="list">Everything + 30% reseller commission + Priority support</p>
-<button class="btn btn-yellow">Get Empire — $777</button>
+</div>
+<div id="p-res" class="pg">
+<div class="card">
+<h3>🤝 Reseller — Queen Jessie Swagata — 30%</h3>
+<p>Help other small businesses get protected.</p>
+<div class="mini"><b>$77 → $23.10</b><span>Kingdom</span></div>
+<div class="mini"><b>$197 → $59.10</b><span>Sovereign</span></div>
+<div class="mini"><b>$777 → $233.10</b><span>Empire</span></div>
 </div>
 <div class="card">
-  <h3>Why small businesses choose Crown</h3>
-  <p>Simple. Secure. Affordable. No complex setup. One file, one upload, protected in minutes. Target protection margin 88.7% — built to keep more money in your business.</p>
+<h3>Queen's reseller link</h3>
+<input type="text" id="rn" value="Queen Jessie Swagata"/>
+<button class="btn btn-green" onclick="makeLink();">Generate Queen's Link</button>
+<div id="rl" style="word-break:break-all;font-weight:bold;text-align:center;margin-top:8px;font-size:12px;"></div>
+</div>
+<div class="card">
+<h3>Dashboard</h3>
+<p>Sales: <b id="sc">0</b> • Earned: <b id="en">$0.00</b> • Clicks: <b id="ck">0</b></p>
+<button class="btn btn-gold" onclick="demoSale();">Simulate $77 Sale (+ $23.10)</button>
 </div>
 </div>
-<!-- RESELLER -->
-<div id="p-res" class="pg">
-  <div class="card">
-    <h3>🤝 Reseller — Earn 30%</h3>
-    <p>Help other small businesses get protected and earn on every sale.</p>
-    <div class="grid">
-      <div class="mini">
-        <b>$77 → $23.10</b>
-        <span>Kingdom</span>
-      </div>
-      <div class="mini">
-        <b>$197 → $59.10</b>
-        <span>Sovereign</span>
-      </div>
-      <div class="mini">
-        <b>$777 → $233.10</b>
-        <span>Empire</span>
-      </div>
-      <div class="mini">
-        <b>88.7%</b>
-        <span>Target margin</span>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <h3>Your reseller link</h3>
-    <input type="text" id="rn" placeholder="Your name, e.g. Leo"/>
-    <button class="btn btn-green" id="gl">Generate My Link</button>
-    <div id="rl" style="word-break:break-all;font-weight:700;text-align:center;margin-top:8px;font-size:13px">
-    </div>
-  </div>
-  <div class="card">
-    <h3>Dashboard</h3>
-    <div class="kpi">
-      <div>
-        <b id="sc">0</b>
-        <span>Sales</span>
-      </div>
-      <div>
-        <b id="en">$0.00</b>
-        <span>Earned</span>
-      </div>
-      <div>
-        <b id="ck">0</b>
-        <span>Clicks</span>
-      </div>
-    </div>
-    <button class="btn btn-yellow" id="ds">Simulate $77 Sale (+ $23.10)</button>
-  </div>
-</div>
-<div class="card" style="text-align:center">
-  <p style="font-size:12px;color:#6a7a70">HOPE CROWN V11 • ECHO-AMEN • 1-9-7-7 • 0x777 LOCKED • LOVE 88.7 FM • Queen Jessie</p>
+<div class="card" style="text-align:center;">
+<p style="font-size:11px;color:#6a7a70;">👑 Queen Jessie Swagata • HOPE CROWN V11 • ECHO-AMEN • 1-9-7-7 • 0x777 LOCKED • 88.7 FM • iPhone 5 + A17</p>
 </div>
 </div>
-<nav class="nav">
-  <button data-p="home" class="active">🏠<span>Home</span>
-</button>
-<button data-p="lock">🛡️<span>Protection</span>
-</button>
-<button data-p="biz">💰<span>Pricing</span>
-</button>
-<button data-p="res">🤝<span>Reseller</span>
-</button>
-</nav>
-<script>function setC(c){document.body.className=c;document.getElementById('cn').textContent=c?c.toUpperCase():'GREEN'}function show(p){document.querySelectorAll('.pg').forEach(e=>e.classList.remove('show'));document.getElementById('p-'+p).classList.add('show');document.querySelectorAll('.tabs button,.nav button').forEach(b=>b.classList.toggle('active',b.dataset.p===p));window.scrollTo(0,0)}document.querySelectorAll('.tabs button,.nav button').forEach(b=>b.onclick=()=>show(b.dataset.p));function open(){let v=document.getElementById('gi').value.toLowerCase().replace(/[^a-z0-9]/g,'');if(['1977','777','echoamen','queenjessie','queen'].includes(v))document.getElementById('gate').classList.add('hide');else document.getElementById('gm').textContent='Incorrect code — try 1-9-7-7'}document.getElementById('go').onclick=open;document.getElementById('gq').onclick=()=>document.getElementById('gate').classList.add('hide');let on=true;document.getElementById('lb').onclick=()=>{on=!on;document.getElementById('ls').textContent=on?'● ON — Your business is protected':'○ OFF — Tap to protect';document.getElementById('li').textContent=on?'💡':'🔦'};document.getElementById('lk').onclick=()=>{let v=document.getElementById('li2').value.replace(/[^0-9]/g,'');document.getElementById('lm').textContent=(v==='1977'||v==='777')?'✅ Protection Verified — ECHO-AMEN':'❌ Incorrect — try 1-9-7-7'};document.getElementById('gl').onclick=()=>{let n=(document.getElementById('rn').value||'Leo').toLowerCase().replace(/[^a-z0-9]+/g,'-');document.getElementById('rl').textContent='https://hleo02837-arch.github.io/Cyberking-portal/?ref='+n+'-1977'};let s=0,e=0,c=0;document.getElementById('ds').onclick=()=>{s++;e+=23.1;c+=5;document.getElementById('sc').textContent=s;document.getElementById('en').textContent='$'+e.toFixed(2);document.getElementById('ck').textContent=c};function render(t){let el=document.getElementById('chart');el.innerHTML='';let data=[[1,12000,14500],[2,23000,28900],[4,41000,58200],[8,52400,88700],[16,61800,110500]];data.forEach(d=>{let h1=Math.round(d[1]/110500*110),h2=Math.round(d[2]/110500*110);let col=document.createElement('div');col.className='col';col.innerHTML='<div class="bar f" style="height:'+h2+'px">
+<div class="nav">
+<button data-p="home" class="active" onclick="showPage('home');">🏠<span>Home</span></button>
+<button data-p="lock" onclick="showPage('lock');">🛡️<span>Protect</span></button>
+<button data-p="biz" onclick="showPage('biz');">💰<span>Pricing</span></button>
+<button data-p="res" onclick="showPage('res');">🤝<span>Reseller</span></button>
 </div>
-<div class="bar m" style="height:'+h1+'px">
-</div>
-<span>'+d[0]+'T</span>';el.appendChild(col)});let cur=data.find(d=>d[0]===t)||data[3];let m=cur[1],f=cur[2];if(![1,2,4,8,16].includes(t)){m=Math.round(52400*t/8);f=Math.round(88700*t/8)}document.getElementById('tv').textContent=t;document.getElementById('fv').textContent=f.toLocaleString();document.getElementById('fv2').textContent=f.toLocaleString();document.getElementById('mv').textContent=m.toLocaleString();document.getElementById('gn').textContent='+'+((f-m)/m*100).toFixed(1)+'%'}render(8);document.getElementById('ts').oninput=e=>render(+e.target.value);</script>
+<script>
+var lampOn = true;
+var sales = 0;
+var earned = 0;
+var clicks = 0;
+function openGate() {
+  var g = document.getElementById('gate');
+  g.className = 'hide';
+  g.style.display = 'none';
+}
+function showPage(p) {
+  var pages = ['home','lock','biz','res'];
+  for (var i = 0; i < pages.length; i++) {
+    var el = document.getElementById('p-' + pages[i]);
+    if (el) { el.className = 'pg'; }
+  }
+  var show = document.getElementById('p-' + p);
+  if (show) { show.className = 'pg show'; }
+  window.scrollTo(0,0);
+}
+function setColor(c) {
+  document.body.className = c;
+  var n = document.getElementById('cn');
+  if (c === '') { n.innerHTML = 'GREEN'; } else { n.innerHTML = c.toUpperCase(); }
+}
+function toggleLamp() {
+  lampOn = !lampOn;
+  var ls = document.getElementById('ls');
+  if (lampOn) { ls.innerHTML = '● ON — Queen Jessie Swagata is protected'; } else { ls.innerHTML = '○ OFF — Tap to protect'; }
+}
+function checkSeal() {
+  var v = document.getElementById('li2').value.toLowerCase().replace(/[^a-z0-9]/g, '');
+  var m = document.getElementById('lm');
+  if (v === '1977' || v === '777' || v === 'swagata' || v === 'queenjessieswagata' || v === 'echoamen') { m.innerHTML = '✅ Crowned — Welcome Queen Jessie Swagata — ECHO-AMEN'; } else { m.innerHTML = '❌ Try 1-9-7-7 or SWAGATA'; }
+}
+function makeLink() {
+  var n = document.getElementById('rn').value || 'Queen Jessie Swagata';
+  n = n.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  document.getElementById('rl').innerHTML = 'https://hleo02837-arch.github.io/Cyberking-portal/?ref=' + n + '-1977';
+}
+function demoSale() {
+  sales = sales + 1;
+  earned = earned + 23.10;
+  clicks = clicks + 5;
+  document.getElementById('sc').innerHTML = sales;
+  document.getElementById('en').innerHTML = '$' + earned.toFixed(2);
+  document.getElementById('ck').innerHTML = clicks;
+}
+function updatePerf() {
+  var t = parseInt(document.getElementById('ts').value, 10);
+  var m = Math.round(52400 * t / 8);
+  var f = Math.round(88700 * t / 8);
+  document.getElementById('tv').innerHTML = t;
+  document.getElementById('fv').innerHTML = f.toLocaleString();
+  document.getElementById('fv2').innerHTML = f.toLocaleString();
+  document.getElementById('mv').innerHTML = m.toLocaleString();
+  var gain = ((f - m) / m * 100).toFixed(1);
+  document.getElementById('gn').innerHTML = '+' + gain + '%';
+}
+updatePerf();
+</script>
 <script>(function(){var loc=location.href.replace(/#.*$/,"");var ATTR_NAMES=["data-product-id","data-productid","data-product_id","product-id","productid","product_id","data-source-entity-id","source-entity-id","source_entity_id","data-product","data-metadata","data-meta"];var DATASET_KEYS=["productId","productid","product_id","sourceEntityId","sourceentityid","source_entity_id","product","metadata","meta"];function readProductId(value){if(typeof value!=="string"||value.length===0)return null;if(/^[0-9]{6,}$/.test(value))return value;var match=value.match(/(?:product(?:_|-)?id|source(?:_|-)?entity(?:_|-)?id)["'=:\s]+([0-9]{6,})/i);return match?match[1]:null}function extractProductId(start){for(var node=start;node&&node!==document.body;node=node.parentElement){for(var i=0;i<ATTR_NAMES.length;i++){var attrValue=node.getAttribute&&node.getAttribute(ATTR_NAMES[i]);var attrProductId=readProductId(attrValue);if(attrProductId)return attrProductId}var dataset=node.dataset||null;if(dataset){for(var j=0;j<DATASET_KEYS.length;j++){var dataValue=dataset[DATASET_KEYS[j]];var dataProductId=readProductId(dataValue);if(dataProductId)return dataProductId}}}return null}function isInlineMediaSlotElement(node){return !!(node&&node.getAttribute&&node.getAttribute("data-clippy-inline-media-slot")!==null)}function findInlineMediaSlot(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(isInlineMediaSlotElement(node))return node}return null}function readInlineMediaUrl(node){if(!node)return null;return node.getAttribute&&((node.getAttribute("data-clippy-inline-media-url")||node.getAttribute("data-url")||node.getAttribute("data_url")))||node.href||null}function stripHash(url){return String(url).replace(/#.*$/,"")}function urlsMatch(a,b){if(!a||!b)return false;try{return stripHash(new URL(a,loc).href)===stripHash(new URL(b,loc).href)}catch(_){return stripHash(a)===stripHash(b)}}function isFirstPartyReelUrl(value){try{var url=new URL(value,loc);if(url.protocol!=="https:")return false;var host=url.hostname.toLowerCase();var supported=host==="instagram.com"||host.endsWith(".instagram.com")||host==="facebook.com"||host.endsWith(".facebook.com");return supported&&/\/reels?\//i.test(url.pathname)}catch(_){return false}}function isInlineMediaUrlClick(node,href){var slot=findInlineMediaSlot(node);if(!slot)return false;var slotUrl=readInlineMediaUrl(slot);if(slotUrl)return urlsMatch(href,slotUrl);return isFirstPartyReelUrl(href)}function findDataHref(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(node.getAttribute){var href=node.getAttribute("data-href")||node.getAttribute("data-url");if(href)return{href:href,node:node}}}return null}var nativeOpen=window.open;window.open=function(url){if(parent!==window&&typeof url==="string"&&/^https?:\/\//.test(url)){parent.postMessage({type:"ecto:usercontent-link-click",href:url},"*");return null}return nativeOpen?nativeOpen.apply(window,arguments):null};document.addEventListener("click",function(e){var target=e.target instanceof Element?e.target:null;if(!target)return;if(parent===window)return;var a=target.closest?target.closest("a[href]"):null;if(a&&a.href&&/^https?:\/\//.test(a.href)&&a.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(a,a.href))return;var productId=extractProductId(target)||extractProductId(a);if(productId){e.preventDefault();parent.postMessage({type:"ecto-artifact-link-click",productId:productId},"*");return}e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:a.href},"*");return}var dataHref=findDataHref(target);if(dataHref&&/^https?:\/\//.test(dataHref.href)&&dataHref.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(dataHref.node,dataHref.href))return;e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:dataHref.href},"*")}},true)})();</script><script>(function(){var FOCUS_TYPE="ecto:artifact-focus-request";var CLOSE_TYPE="ecto:artifact-close-request";function focusArtifactDocument(){var body=document.body;if(!body)return;try{window.focus();}catch(e){}if(!body.hasAttribute("tabindex"))body.setAttribute("tabindex","-1");try{body.focus({preventScroll:true});}catch(e){try{body.focus();}catch(e2){}}}window.addEventListener("message",function(event){if(event.source!==window.parent)return;var data=event.data;if(!data||typeof data!=="object"||data.type!==FOCUS_TYPE)return;if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",focusArtifactDocument,{once:true});return;}focusArtifactDocument();});window.addEventListener("keydown",function(event){if(event.key!=="Escape")return;window.setTimeout(function(){if(event.defaultPrevented)return;window.parent.postMessage({type:CLOSE_TYPE},"*");},0);});})();</script></body>
 </html>
