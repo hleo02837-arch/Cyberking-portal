@@ -1,4 +1,7 @@
-<!DOCTYPE html><html lang="en"><head><style>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head><style>
 @font-face {
   font-family: "Optimistic";
   font-style: normal;
@@ -19,54 +22,253 @@
 :where(code, pre, kbd, samp) {
   font-family: "Optimistic Mono", ui-monospace, monospace;
 }
-</style><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>BUSINESS - HOPE CROWN V11 GATEKEEPER</title><style>*{box-sizing:border-box}body{margin:0;background:#fffbe0;color:#001a08;font-family:ui-monospace,Menlo,Consolas,monospace}body.theme-green{background:#fffbe0}body.theme-gold{background:#fff8dc}body.theme-blue{background:#eaf6ff}body.theme-purple{background:#f5eaff}body.theme-red{background:#ffecec}#app{max-width:480px;margin:0 auto;min-height:100vh;background:inherit;padding-bottom:90px}.head{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-bottom:2px solid #00b050;background:#ffe600;position:sticky;top:0;z-index:10}.brand{font-weight:900;font-size:17px}.colorBar{display:flex;gap:8px;justify-content:center;padding:10px 16px}.colorBar button{border:3px solid #000;border-radius:50%;width:44px;height:44px;font-size:20px;cursor:pointer}.colorBar button.active{box-shadow:0 0 0 3px #fff,0 0 15px #000}.castle{margin:12px 16px;background:#00b050;border:3px solid #006622;border-radius:16px;padding:12px;text-align:center;color:#fff}body.theme-gold .castle{background:#ffb800;color:#000}body.theme-blue .castle{background:#0077ff}body.theme-purple .castle{background:#8a00ff}body.theme-red .castle{background:#e60000}.castle .bigApples{font-size:42px;line-height:1.1}.lampBox{margin:12px 16px;background:#fff;color:#000;border:3px solid #00b050;border-radius:16px;padding:14px;text-align:center}.lampStatus{font-weight:900;padding:10px;border-radius:10px;margin:8px 0;background:#00ff66;color:#000}.card{margin:12px 16px;background:#fff;border:2px solid #00b050;border-radius:16px;padding:14px}.price{font-size:32px;font-weight:900;color:#00b050}.btn{width:100%;border:0;padding:14px;border-radius:12px;font-weight:900;cursor:pointer;margin-top:10px}.btn-green{background:#00ff66;color:#000}.btn-yellow{background:#ffe600;color:#000}.btn-dark{background:#001a08;color:#fff}.btn-lamp{background:#ffe600;color:#000;border:3px solid #00b050;box-shadow:0 0 20px #ffe600}#gate{position:fixed;inset:0;background:#001a08;z-index:200;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;text-align:center;color:#fff}#gate.hide{display:none}.gateBox{background:#fff;color:#000;border:3px solid #00ff66;border-radius:16px;padding:16px;width:100%;max-width:380px}.gateBox input{width:100%;padding:14px;border:2px solid #00b050;border-radius:10px;font-size:18px;text-align:center;font-weight:900;margin:10px 0}.nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:480px;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;background:#ffe600;border-top:2px solid #00b050;padding:8px 0}.nav a{text-align:center;text-decoration:none;color:#001a08;display:flex;flex-direction:column;font-size:18px}.nav a span{font-size:10px}</style></head><body class="theme-green"><div id="gate"><div style="font-size:36px">🍏🍏🍏🍏🍏🍏🍏</div><div style="font-size:36px">🍏🏰🍏🏰🍏🏰🍏</div><h1 style="color:#00ff66">🔐 GATEKEEPER</h1><p>HOPE CROWN V11 • BUSINESS • SAME THING DIFFERENT COLOR</p><div class="gateBox"><h3 style="margin:0">🔐 ENTER SEAL TO OPEN GATE</h3><p style="font-size:12px">Hint: 1-9-7-7 or ECHO-AMEN</p><input id="gateInput" placeholder="1-9-7-7" value="1-9-7-7"/><button class="btn btn-green" id="gateBtn">💚 OPEN GATE - ECHO-AMEN 🍏</button><button class="btn btn-yellow" id="gateQueenBtn">👑 I AM QUEEN JESSIE - OPEN GATE</button><div id="gateMsg" style="font-size:12px;color:#006622;margin-top:8px"></div></div></div><div id="app"><header class="head"><div class="brand">💚 HOPE CROWN <b>V11</b> - BUSINESS</div><div>💡 LAMP LIT</div></header><div class="colorBar"><button data-color="green" class="active" style="background:#00ff66">💚</button><button data-color="gold" style="background:#ffe600">💛</button><button data-color="blue" style="background:#0077ff">💙</button><button data-color="purple" style="background:#8a00ff">💜</button><button data-color="red" style="background:#e60000">❤️</button></div><p style="text-align:center;font-size:12px;font-weight:900;margin:0">SAME THING • DIFFERENT COLOR • TAP A COLOR 👆</p><section class="castle"><div class="bigApples">🍏🍏🍏🍏🍏</div><div class="bigApples">🍏🏰🍏🏰🍏</div><div class="bigApples">🍏🍏🍏🍏🍏</div><h2>🍏 GRANNY SMITH BIG ONES</h2><p>CASTLE TOWERWALL • GREEN APPLES • <span id="colorName">GREEN</span></p><p style="margin-top:6px;font-weight:900">💡 THE LAMP IS LIT 🔦 KINGDOM IS LIT</p></section><div class="lampBox"><div style="font-size:44px" id="lampIcon">💡</div><h3>🔦 INDICATION: LIGHT UP THE LAMP</h3><div class="lampStatus" id="lampStatus">💡 LAMP: ON - THE LAMP IS LIT 🔦 KINGDOM IS LIT</div><button class="btn btn-lamp" id="lampBtn">💡 THE LAMP IS LIT - TAP TO TURN OFF</button></div><div class="card"><h3>💚 KINGDOM</h3><div class="price">$77 <span style="font-size:12px">one-time</span></div><p>Full Crown portal • Lockdown • Lamp Lit • Queen Jessie • 1-9-7-7 seal • Granny Smith Castle</p><button class="btn btn-green">💚 GET KINGDOM - $77</button></div><div class="card"><h3>💚 SOVEREIGN - MOST POPULAR</h3><div class="price">$197 <span style="font-size:12px">/year</span></div><p>Everything in Kingdom + Business + Reseller + Updates</p><button class="btn btn-green">💚 GET SOVEREIGN - $197</button></div><div class="card"><h3>🍏 EMPIRE</h3><div class="price">$777 <span style="font-size:12px">/year</span></div><p>Everything + Empire reseller 30% • Priority • Full Crown • Granny Smith Castle</p><button class="btn btn-yellow">🍏 GET EMPIRE - $777</button></div><div class="card"><h3>💰 5 Revenue Streams</h3><p>1. Kingdom sales<br/>2. Sovereign yearly<br/>3. Empire yearly<br/>4. Reseller 30%<br/>5. Custom Crown builds<br/>Target margin 88.7%</p><button class="btn btn-dark" onclick="location.href='index.html'">← BACK TO HOME</button></div><nav class="nav"><a href="index.html">🏠<span>Home</span></a><a href="lockdown.html">💚<span>Lockdown</span></a><a href="business.html">💰<span>Business</span></a><a href="reseller.html">🤝<span>Reseller</span></a></nav></div><script>let lampOn=true;function setColor(c){document.body.className="theme-"+c;document.querySelectorAll(".colorBar button").forEach(b=>b.classList.toggle("active",b.dataset.color===c));const names={green:"GREEN",gold:"GOLD",blue:"BLUE",purple:"PURPLE",red:"RED"};document.getElementById("colorName").textContent=names[c];}document.querySelectorAll(".colorBar button").forEach(b=>b.addEventListener("click",()=>setColor(b.dataset.color)));function openGate(){const v=(document.getElementById("gateInput").value||"").toLowerCase().replace(/[^a-z0-9]/g,"");if(v==="1977"||v==="777"||v==="echoamen"||v==="queenjessie"||v==="queen"){document.getElementById("gate").classList.add("hide");}else{document.getElementById("gateMsg").textContent="❌ Wrong seal. Try 1-9-7-7";}}document.getElementById("gateBtn").addEventListener("click",openGate);document.getElementById("gateQueenBtn").addEventListener("click",()=>document.getElementById("gate").classList.add("hide"));document.getElementById("lampBtn").addEventListener("click",()=>{lampOn=!lampOn;const st=document.getElementById("lampStatus");const ic=document.getElementById("lampIcon");if(lampOn){st.textContent="💡 LAMP: ON - THE LAMP IS LIT 🔦";ic.textContent="💡";}else{st.textContent="🔦 LAMP: OFF - TAP TO LIGHT UP";ic.textContent="🔦";}});</script><script>(function(){var loc=location.href.replace(/#.*$/,"");var ATTR_NAMES=["data-product-id","data-productid","data-product_id","product-id","productid","product_id","data-source-entity-id","source-entity-id","source_entity_id","data-product","data-metadata","data-meta"];var DATASET_KEYS=["productId","productid","product_id","sourceEntityId","sourceentityid","source_entity_id","product","metadata","meta"];function readProductId(value){if(typeof value!=="string"||value.length===0)return null;if(/^[0-9]{6,}$/.test(value))return value;var match=value.match(/(?:product(?:_|-)?id|source(?:_|-)?entity(?:_|-)?id)["'=:\s]+([0-9]{6,})/i);return match?match[1]:null}function extractProductId(start){for(var node=start;node&&node!==document.body;node=node.parentElement){for(var i=0;i<ATTR_NAMES.length;i++){var attrValue=node.getAttribute&&node.getAttribute(ATTR_NAMES[i]);var attrProductId=readProductId(attrValue);if(attrProductId)return attrProductId}var dataset=node.dataset||null;if(dataset){for(var j=0;j<DATASET_KEYS.length;j++){var dataValue=dataset[DATASET_KEYS[j]];var dataProductId=readProductId(dataValue);if(dataProductId)return dataProductId}}}return null}function isInlineMediaSlotElement(node){return !!(node&&node.getAttribute&&node.getAttribute("data-clippy-inline-media-slot")!==null)}function findInlineMediaSlot(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(isInlineMediaSlotElement(node))return node}return null}function readInlineMediaUrl(node){if(!node)return null;return node.getAttribute&&((node.getAttribute("data-clippy-inline-media-url")||node.getAttribute("data-url")||node.getAttribute("data_url")))||node.href||null}function stripHash(url){return String(url).replace(/#.*$/,"")}function urlsMatch(a,b){if(!a||!b)return false;try{return stripHash(new URL(a,loc).href)===stripHash(new URL(b,loc).href)}catch(_){return stripHash(a)===stripHash(b)}}function isFirstPartyReelUrl(value){try{var url=new URL(value,loc);if(url.protocol!=="https:")return false;var host=url.hostname.toLowerCase();var supported=host==="instagram.com"||host.endsWith(".instagram.com")||host==="facebook.com"||host.endsWith(".facebook.com");return supported&&/\/reels?\//i.test(url.pathname)}catch(_){return false}}function isInlineMediaUrlClick(node,href){var slot=findInlineMediaSlot(node);if(!slot)return false;var slotUrl=readInlineMediaUrl(slot);if(slotUrl)return urlsMatch(href,slotUrl);return isFirstPartyReelUrl(href)}function findDataHref(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(node.getAttribute){var href=node.getAttribute("data-href")||node.getAttribute("data-url");if(href)return{href:href,node:node}}}return null}var nativeOpen=window.open;window.open=function(url){if(parent!==window&&typeof url==="string"&&/^https?:\/\//.test(url)){parent.postMessage({type:"ecto:usercontent-link-click",href:url},"*");return null}return nativeOpen?nativeOpen.apply(window,arguments):null};document.addEventListener("click",function(e){var target=e.target instanceof Element?e.target:null;if(!target)return;if(parent===window)return;var a=target.closest?target.closest("a[href]"):null;if(a&&a.href&&/^https?:\/\//.test(a.href)&&a.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(a,a.href))return;var productId=extractProductId(target)||extractProductId(a);if(productId){e.preventDefault();parent.postMessage({type:"ecto-artifact-link-click",productId:productId},"*");return}e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:a.href},"*");return}var dataHref=findDataHref(target);if(dataHref&&/^https?:\/\//.test(dataHref.href)&&dataHref.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(dataHref.node,dataHref.href))return;e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:dataHref.href},"*")}},true)})();</script><script>(function(){var FOCUS_TYPE="ecto:artifact-focus-request";var CLOSE_TYPE="ecto:artifact-close-request";function focusArtifactDocument(){var body=document.body;if(!body)return;try{window.focus();}catch(e){}if(!body.hasAttribute("tabindex"))body.setAttribute("tabindex","-1");try{body.focus({preventScroll:true});}catch(e){try{body.focus();}catch(e2){}}}window.addEventListener("message",function(event){if(event.source!==window.parent)return;var data=event.data;if(!data||typeof data!=="object"||data.type!==FOCUS_TYPE)return;if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",focusArtifactDocument,{once:true});return;}focusArtifactDocument();});window.addEventListener("keydown",function(event){if(event.key!=="Escape")return;window.setTimeout(function(){if(event.defaultPrevented)return;window.parent.postMessage({type:CLOSE_TYPE},"*");},0);});})();</script></body></html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LOCKDOWN - HOPE CROWN V11</title>
-<style>
-*{box-sizing:border-box}body{margin:0;background:#000;color:#fff;font-family:ui-monospace,Menlo,Consolas,monospace}
-#app{max-width:480px;margin:0 auto;min-height:100vh;background:#020702;padding-bottom:90px}
-.header{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-bottom:1px solid #333;background:#000;position:sticky;top:0;z-index:10}
-.brand{font-weight:900;font-size:16px}.brand b{color:#ffe600}.live{color:#7dff9a;font-size:11px}
-.hero{margin:12px 16px;border:1px solid #ffe600;border-radius:16px;overflow:hidden;position:relative}
-.hero img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;background:#111}
-.heroText{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.92),rgba(0,0,0,.1));padding:14px;display:flex;flex-direction:column;justify-content:flex-end}
-.heroText h1{margin:0;font-size:22px;color:#ffe9a8}.heroText p{margin:4px 0 0;font-size:12px;color:#b8ffc8}
-.pills{display:flex;flex-wrap:wrap;gap:6px;margin:10px 16px}.pills span{border:1px solid #ffe600;padding:5px 9px;border-radius:20px;font-size:10px}
-.card{margin:12px 16px;background:#07130a;border:1px solid #2aff5a;border-radius:14px;padding:14px}
-.card h3{margin:0 0 6px}.card p{margin:0;font-size:12px;line-height:1.6;color:#c9ffd0}
-.btn{width:100%;border:0;padding:14px;border-radius:12px;font-weight:900;font-size:15px;cursor:pointer;margin-top:10px}
-.btn-yellow{background:#ffe600;color:#000}.btn-red{background:#ff1a1a;color:#fff}.btn-green{background:#2aff5a;color:#000}.btn-dark{background:#111;color:#fff;border:1px solid #555}
-.stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:0 16px}.stats div{border:1px solid #2aff5a;border-radius:10px;padding:10px;text-align:center;font-size:11px}.stats b{display:block;font-size:13px;margin-top:4px}
-#log{margin:14px 16px;border:1px solid #2aff5a;border-radius:12px;overflow:hidden}.logHead{background:#0a2a12;padding:8px 12px;font-size:11px}.logBody{padding:10px;font-size:11px;line-height:1.7;max-height:120px;overflow-y:auto}
-#lockOverlay{position:fixed;inset:0;background:#c00000;z-index:100;display:none;flex-direction:column;align-items:center;justify-content:center;padding:20px;text-align:center}
-#lockOverlay.show{display:flex}.lockBig{font-size:44px}.lockTitle{font-size:28px;font-weight:900;letter-spacing:2px;margin:10px 0}.lockSub{font-size:13px;line-height:1.6}.lockBox{border:2px solid #fff;border-radius:12px;padding:12px;margin:14px 0;width:100%;max-width:380px;background:rgba(0,0,0,.25)}.lockBox div{font-size:12px;margin:4px 0}
-.bottomNav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:480px;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;background:#020702;border-top:1px solid #2aff5a;padding:8px 0;z-index:20}.bottomNav a{text-align:center;text-decoration:none;color:#8affa8;font-size:18px;display:flex;flex-direction:column}.bottomNav a span{font-size:10px}.bottomNav a.active{color:#ff5555}
-</style>l
-</head>
-<body>
-<div id="app">
-<header class="header"><div class="brand">👑 HOPE CROWN <b>V11</b> - LOCKDOWN</div><div class="live">● 88.7 FM LIVE</div></header>
-<section class="hero"><img src="hope-crown-v11.jpg" alt="HOPE CROWN V11"/><div class="heroText"><h1>CYBERWARFARE TECHNOLOGY NOW LTD V11</h1><p>Sovereign Authority Active • Designated Node: Queen Jessie • Operational</p></div></section>
-<div class="pills"><span>SEAL: 1-9-7-7</span><span>KEY: 0x777 LOCKED</span><span>QUEEN: JESSIE</span><span id="lockBeats">BEATS: 0</span></div>
-<div class="stats"><div>STATUS<b>OPERATIONAL</b></div><div>UPTIME<b id="lockUptime">00:00:00</b></div><div>HEARTBEAT<b>LOVE 88.7 FM</b></div></div>
-<div class="card"><h3>⚡ EXECUTE LOCKDOWN</h3><p>Tap the yellow button to activate CRITICAL LOCKDOWN. All Kingdom gates close. Only Queen Jessie node stays open. 0x777 seal locks.</p><button class="btn btn-yellow" id="executeBtn">⚡ EXECUTE LOCKDOWN - 0x777</button><button class="btn btn-dark" onclick="location.href='index.html'">← BACK TO HOME</button></div>
-<div class="card"><h3>🛡️ What Lockdown Does</h3><p>• Locks 0x777 seal<br/>• Shows CRITICAL LOCKDOWN ACTIVE red screen<br/>• Keeps Queen Jessie node online<br/>• Keeps LOVE 88.7 FM heartbeat alive</p><button class="btn btn-green" onclick="location.href='business.html'">💰 BUSINESS + STRIPE →</button></div>
-<div id="log"><div class="logHead">TERMINAL</div><div class="logBody" id="lockLog"><div>[INIT] Lockdown system ready...</div><div>[KEY] 0x86C1 • 0x777 • LH-1977...</div><div>[SYS] Queen Jessie node online...</div><div>[SYS] Waiting for EXECUTE...</div></div></div>
-<nav class="bottomNav"><a href="index.html">🏠<span>Home</span></a><a href="lockdown.html" class="active">🔴<span>Lockdown</span></a><a href="business.html">💰<span>Business</span></a><a href="reseller.html">🤝<span>Reseller</span></a></nav>
+</style>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>HOPE CROWN V11 — Small Business Protection</title>
+    <style>*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Inter,Arial,sans-serif;background:#f4f7f5;color:#0f1f16;line-height:1.5}body.gold{background:#fffaf0}body.blue{background:#eef5ff}body.purple{background:#f7f2ff}body.red{background:#fff2f2}a{color:inherit}.wrap{max-width:440px;margin:0 auto;padding-bottom:96px}.top{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #e2e8e4;display:flex;justify-content:space-between;align-items:center;padding:12px 16px}.logo{font-weight:800;font-size:15px;letter-spacing:-.2px}.logo b{color:#00a651}.live{font-size:12px;font-weight:700;background:#e6f9ee;color:#067a3d;padding:5px 9px;border-radius:999px}.hero{margin:14px 16px;background:#0f2e1e;color:#fff;border-radius:20px;padding:20px;position:relative;overflow:hidden}.hero h1{font-size:32px;line-height:1.05;margin:8px 0;letter-spacing:-1px}.hero p{color:#c8e6d5;font-size:14px;margin:0}.pill{display:inline-block;background:#00c853;color:#00220f;font-size:11px;font-weight:800;padding:5px 9px;border-radius:999px;letter-spacing:.6px}.castle{margin:14px 16px;background:#fff;border:1px solid #e2e8e4;border-radius:18px;padding:16px;display:flex;gap:14px;align-items:center}.castleIcon{font-size:38px}.castle h3{margin:0;font-size:16px}.castle p{margin:4px 0 0;font-size:13px;color:#5b6b60}.colors{display:flex;gap:8px;justify-content:center;padding:4px 16px 10px}.colors button{width:36px;height:36px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px #d0d8d2;cursor:pointer;font-size:16px}.colors button.active{box-shadow:0 0 0 2px #00a651,0 4px 10px rgba(0,0,0,.12)}.card{margin:12px 16px;background:#fff;border:1px solid #e2e8e4;border-radius:18px;padding:16px}.card h3{margin:0 0 6px;font-size:17px}.card p{margin:0;font-size:13.5px;color:#4a5a50}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.mini{background:#f4f7f5;border-radius:12px;padding:12px}.mini b{font-size:14px}.mini span{font-size:12px;color:#5b6b60;display:block}.btn{width:100%;border:0;padding:13px;border-radius:12px;font-weight:800;cursor:pointer;margin-top:10px;font-size:14px}.btn-green{background:#00c853;color:#00220f}.btn-dark{background:#0f2e1e;color:#fff}.btn-light{background:#eef2ef;color:#0f1f16}.btn-yellow{background:#ffe600;color:#111}.lampRow{display:flex;align-items:center;gap:12px}.lampDot{width:44px;height:44px;border-radius:50%;background:#e6f9ee;display:flex;align-items:center;justify-content:center;font-size:22px}.tabs{display:flex;gap:6px;padding:0 16px}.tabs button{flex:1;padding:10px 4px;border:1px solid #e2e8e4;background:#fff;border-radius:11px;font-weight:700;font-size:12px;cursor:pointer}.tabs button.active{background:#0f2e1e;color:#fff}.pg{display:none}.pg.show{display:block}.price{font-size:30px;font-weight:800;letter-spacing:-.5px}.price small{font-size:13px;color:#6a7a70;font-weight:500}.list{font-size:13.5px;color:#4a5a50;line-height:1.7;margin:10px 0 0}.chart{display:flex;align-items:flex-end;gap:8px;height:120px;margin-top:12px}.col{flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:4px;align-items:center}.bar{width:100%;border-radius:7px 7px 0 0}.bar.m{background:#ffe600;border:1px solid #e6c200}.bar.f{background:#00a651}.col span{font-size:10px;font-weight:700;color:#6a7a70}input[type=text]{width:100%;padding:12px;border:1px solid #d0d8d2;border-radius:11px;margin-top:8px;font-size:14px}input[type=range]{width:100%;margin-top:10px}.nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:440px;background:#fff;border-top:1px solid #e2e8e4;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;padding:8px 0;z-index:30}.nav button{border:0;background:none;font-size:18px;cursor:pointer;color:#6a7a70}.nav button span{display:block;font-size:10px;font-weight:700}.nav button.active{color:#00a651}#gate{position:fixed;inset:0;background:#0f2e1e;z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;color:#fff;text-align:center}#gate.hide{display:none}.gateCard{background:#fff;color:#111;border-radius:18px;padding:18px;width:100%;max-width:360px;text-align:left}.gateCard h3{margin:0}.gateCard p{font-size:13px;color:#5b6b60}.gateCard input{width:100%;padding:13px;border:1px solid #d0d8d2;border-radius:11px;text-align:center;font-weight:800;font-size:16px;margin:10px 0}.badge{font-size:11px;background:#e6f9ee;color:#067a3d;padding:4px 8px;border-radius:999px;font-weight:700}.kpi{display:flex;gap:10px;margin-top:12px}.kpi div{flex:1;background:#f4f7f5;border-radius:12px;padding:10px;text-align:center}.kpi b{font-size:18px;display:block}.kpi span{font-size:11px;color:#6a7a70}</style>
+  </head>
+  <body>
+    <div id="gate">
+      <div style="font-size:34px">🍏 🏰 🍏</div>
+      <h2 style="margin:10px 0 4px">HOPE CROWN V11</h2>
+      <p style="color:#c8e6d5;font-size:13px;margin:0 0 16px">Small Business Protection • Secure Access</p>
+      <div class="gateCard">
+        <span class="badge">🔐 GATEKEEPER • SECURE</span>
+        <h3 style="margin-top:10px">Enter your access code</h3>
+        <p>Your business is protected. Enter your seal to continue.</p>
+        <input id="gi" value="1-9-7-7"/>
+        <button class="btn btn-green" id="go">Unlock Protection →</button>
+        <button class="btn btn-light" id="gq">👑 Continue as Queen Jessie</button>
+        <div id="gm" style="font-size:12px;color:#b00020;text-align:center;margin-top:6px">
+        </div>
+        <p style="text-align:center;font-size:11px">Hint: 1-9-7-7 or ECHO-AMEN</p>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="top">
+        <div class="logo">HOPE CROWN <b>V11</b>
+      </div>
+      <div class="live">● PROTECTED</div>
+    </div>
+    <div class="hero">
+      <span class="pill">SMALL BUSINESS PROTECTION</span>
+      <h1>Protect your<br/>small business.<br/>Keep it green.</h1>
+      <p>Lockdown, Gatekeeper &amp; live monitoring — built for small businesses that need big protection, without the big price.</p>
+      <div class="kpi" style="margin-top:16px">
+        <div style="background:rgba(255,255,255,.12);border-radius:12px">
+          <b style="color:#fff">0x777</b>
+          <span style="color:#c8e6d5">LOCKED</span>
+        </div>
+        <div style="background:rgba(255,255,255,.12);border-radius:12px">
+          <b style="color:#fff">88.7 FM</b>
+          <span style="color:#c8e6d5">HEARTBEAT</span>
+        </div>
+        <div style="background:rgba(255,255,255,.12);border-radius:12px">
+          <b style="color:#fff">1-9-7-7</b>
+          <span style="color:#c8e6d5">SEAL</span>
+        </div>
+      </div>
+    </div>
+    <div class="castle">
+      <div class="castleIcon">🍏</div>
+      <div>
+        <h3>Granny Smith Castle • Green &amp; Secure</h3>
+        <p>Your business wall. Green means safe. Lamp lit means protected. Theme: <b id="cn">GREEN</b>
+      </p>
+    </div>
+  </div>
+  <div class="colors">
+    <button onclick="setC('')" class="active" style="background:#00c853">💚</button>
+    <button onclick="setC('gold')" style="background:#ffc107">💛</button>
+    <button onclick="setC('blue')" style="background:#2196f3">💙</button>
+    <button onclick="setC('purple')" style="background:#8a2be2">💜</button>
+    <button onclick="setC('red')" style="background:#e53935">❤️</button>
+  </div>
+  <p style="text-align:center;font-size:11px;color:#6a7a70;margin:0 0 10px;font-weight:700;letter-spacing:.5px">SAME PROTECTION • CHOOSE YOUR COLOUR</p>
+  <div class="card">
+    <div class="lampRow">
+      <div class="lampDot" id="li">💡</div>
+      <div style="flex:1">
+        <h3 style="margin:0">Protection Lamp</h3>
+        <p id="ls" style="color:#067a3d;font-weight:700">● ON — Your business is protected</p>
+      </div>
+    </div>
+    <button class="btn btn-light" id="lb">Toggle Lamp</button>
+  </div>
+  <div class="tabs">
+    <button data-p="home" class="active">Home</button>
+    <button data-p="lock">Protection</button>
+    <button data-p="biz">Pricing</button>
+    <button data-p="res">Reseller</button>
+  </div>
+  <!-- HOME -->
+  <div id="p-home" class="pg show">
+    <div class="card">
+      <h3>🛡️ What we protect</h3>
+      <p>Everything a small business needs to stay safe and open.</p>
+      <div class="grid">
+        <div class="mini">
+          <b>🏪 Your Shop</b>
+          <span>Lockdown blocks intruders</span>
+        </div>
+        <div class="mini">
+          <b>👥 Customers</b>
+          <span>Data sealed &amp; private</span>
+        </div>
+        <div class="mini">
+          <b>💰 Money</b>
+          <span>0x777 locked payments</span>
+        </div>
+        <div class="mini">
+          <b>🌐 Website</b>
+          <span>Gatekeeper access only</span>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>⚡ Performance — RustPerf v0.5</h3>
+      <p>Fast, even under load. Live throughput for your protection system.</p>
+      <div style="display:flex;justify-content:space-between;margin-top:10px;font-size:13px">
+        <span>Threads: <b id="tv">8</b>
+      </span>
+      <span>Feature: <b id="fv">88,700</b> ops/s</span>
+    </div>
+    <input type="range" id="ts" min="1" max="16" value="8"/>
+    <div class="chart" id="chart">
+    </div>
+    <div style="display:flex;justify-content:space-between;font-size:11px;color:#6a7a70">
+      <span>1 Thread</span>
+      <span>2</span>
+      <span>4</span>
+      <span>8</span>
+      <span>16</span>
+    </div>
+    <p style="margin-top:10px">Main: <b id="mv">52,400</b> • Feature: <b id="fv2">88,700</b> • Gain: <b style="color:#00a651" id="gn">+69.3%</b>
+  </p>
 </div>
-<div id="lockOverlay"><div class="lockBig">🔴</div><div class="lockTitle">CRITICAL<br/>LOCKDOWN ACTIVE</div><div class="lockSub">HOPE CROWN V11 • ECHO-AMEN SOVEREIGN<br/>All gates CLOSED • Queen Jessie node OPEN<br/>LOVE 88.7 FM heartbeat ALIVE</div><div class="lockBox"><div>SEAL: 1-9-7-7 • 0x777 LOCKED</div><div>DESIGNATED NODE: Queen Jessie</div><div>TIME IN LOCKDOWN: <span id="lockTimer">00:00:00</span></div><div>BEATS: <span id="lockBeats2">0</span></div></div><button class="btn btn-yellow" id="unlockBtn" style="max-width:380px">🔓 UNLOCK - ECHO-AMEN</button><button class="btn btn-dark" onclick="location.href='index.html'" style="max-width:380px">🏠 BACK TO HOME</button></div>
-<script>
-let start=Date.now();let beats=parseInt(localStorage.getItem("crown_beats")||"0");let lockStart=null;
-function fmt(s){const h=String(Math.floor(s/3600)).padStart(2,"0");const m=String(Math.floor((s%3600)/60)).padStart(2,"0");const sec=String(s%60).padStart(2,"0");return h+":"+m+":"+sec;}
-document.getElementById("lockBeats").textContent="BEATS: "+beats;
-setInterval(()=>{document.getElementById("lockUptime").textContent=fmt(Math.floor((Date.now()-start)/1000));if(lockStart){document.getElementById("lockTimer").textContent=fmt(Math.floor((Date.now()-lockStart)/1000));}},1000);
-function addLog(t){const el=document.getElementById("lockLog");const d=document.createElement("div");d.textContent=t;el.appendChild(d);}
-document.getElementById("executeBtn").addEventListener("click",()=>{lockStart=Date.now();beats++;localStorage.setItem("crown_beats",beats);document.getElementById("lockBeats").textContent="BEATS: "+beats;document.getElementById("lockBeats2").textContent=beats;document.getElementById("lockOverlay").classList.add("show");addLog("[LOCKDOWN] EXECUTE 0x777 - CRITICAL LOCKDOWN ACTIVE");addLog("[SYS] Gates CLOSED • Queen Jessie OPEN");});
-document.getElementById("unlockBtn").addEventListener("click",()=>{document.getElementById("lockOverlay").classList.remove("show");lockStart=null;addLog("[UNLOCK] ECHO-AMEN - Lockdown lifted");});
-</script>
-</body>
+<div class="card">
+  <h3>👑 Queen Jessie — Sealed</h3>
+  <p>She is a Queen. Crowned and sealed. Queen of the Kingdom. Your protection is sealed with ECHO-AMEN.</p>
+</div>
+</div>
+<!-- PROTECTION -->
+<div id="p-lock" class="pg">
+  <div class="card" style="background:#00a651;color:#fff">
+    <h3 style="color:#fff">💚 GREEN LOCKDOWN — SAFE</h3>
+    <p style="color:#e6f9ee">Your business is protected. No red alert. All systems green.</p>
+    <p style="color:#fff;margin-top:10px;font-size:13px">✓ Shop Locked &nbsp; ✓ Customer Data Locked<br/>✓ Money Locked &nbsp; ✓ Gatekeeper ON</p>
+  </div>
+  <div class="card">
+    <h3>Check your seal</h3>
+    <p>Enter your protection seal to verify lockdown.</p>
+    <input type="text" id="li2" placeholder="Enter 1-9-7-7"/>
+    <button class="btn btn-green" id="lk">Verify Protection</button>
+    <div id="lm" style="text-align:center;font-weight:800;margin-top:8px">
+    </div>
+  </div>
+  <div class="card">
+    <h3>Protection checklist</h3>
+    <p class="list">✓ Gatekeeper — only sealed keys enter<br/>✓ Lamp — lit means protected<br/>✓ Castle — Granny Smith wall<br/>✓ Heartbeat — 88.7 FM monitoring<br/>✓ Seal — 1-9-7-7 ECHO-AMEN</p>
+  </div>
+</div>
+<!-- BUSINESS -->
+<div id="p-biz" class="pg">
+  <div class="card">
+    <span class="badge">MOST POPULAR FOR SMALL BUSINESS</span>
+    <h3 style="margin-top:8px">Kingdom — Small Business Protection</h3>
+    <div class="price">$77 <small>one-time</small>
+  </div>
+  <p class="list">✓ Full protection portal<br/>✓ Lockdown + Gatekeeper<br/>✓ Lamp + Castle<br/>✓ Queen Jessie seal</p>
+  <button class="btn btn-green">Get Protection — $77</button>
+</div>
+<div class="card">
+  <h3>Sovereign</h3>
+  <div class="price">$197 <small>/ year</small>
+</div>
+<p class="list">Everything in Kingdom + Reseller + Updates</p>
+<button class="btn btn-dark">Get Sovereign — $197</button>
+</div>
+<div class="card">
+  <h3>Empire</h3>
+  <div class="price">$777 <small>/ year</small>
+</div>
+<p class="list">Everything + 30% reseller commission + Priority support</p>
+<button class="btn btn-yellow">Get Empire — $777</button>
+</div>
+<div class="card">
+  <h3>Why small businesses choose Crown</h3>
+  <p>Simple. Secure. Affordable. No complex setup. One file, one upload, protected in minutes. Target protection margin 88.7% — built to keep more money in your business.</p>
+</div>
+</div>
+<!-- RESELLER -->
+<div id="p-res" class="pg">
+  <div class="card">
+    <h3>🤝 Reseller — Earn 30%</h3>
+    <p>Help other small businesses get protected and earn on every sale.</p>
+    <div class="grid">
+      <div class="mini">
+        <b>$77 → $23.10</b>
+        <span>Kingdom</span>
+      </div>
+      <div class="mini">
+        <b>$197 → $59.10</b>
+        <span>Sovereign</span>
+      </div>
+      <div class="mini">
+        <b>$777 → $233.10</b>
+        <span>Empire</span>
+      </div>
+      <div class="mini">
+        <b>88.7%</b>
+        <span>Target margin</span>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Your reseller link</h3>
+    <input type="text" id="rn" placeholder="Your name, e.g. Leo"/>
+    <button class="btn btn-green" id="gl">Generate My Link</button>
+    <div id="rl" style="word-break:break-all;font-weight:700;text-align:center;margin-top:8px;font-size:13px">
+    </div>
+  </div>
+  <div class="card">
+    <h3>Dashboard</h3>
+    <div class="kpi">
+      <div>
+        <b id="sc">0</b>
+        <span>Sales</span>
+      </div>
+      <div>
+        <b id="en">$0.00</b>
+        <span>Earned</span>
+      </div>
+      <div>
+        <b id="ck">0</b>
+        <span>Clicks</span>
+      </div>
+    </div>
+    <button class="btn btn-yellow" id="ds">Simulate $77 Sale (+ $23.10)</button>
+  </div>
+</div>
+<div class="card" style="text-align:center">
+  <p style="font-size:12px;color:#6a7a70">HOPE CROWN V11 • ECHO-AMEN • 1-9-7-7 • 0x777 LOCKED • LOVE 88.7 FM • Queen Jessie</p>
+</div>
+</div>
+<nav class="nav">
+  <button data-p="home" class="active">🏠<span>Home</span>
+</button>
+<button data-p="lock">🛡️<span>Protection</span>
+</button>
+<button data-p="biz">💰<span>Pricing</span>
+</button>
+<button data-p="res">🤝<span>Reseller</span>
+</button>
+</nav>
+<script>function setC(c){document.body.className=c;document.getElementById('cn').textContent=c?c.toUpperCase():'GREEN'}function show(p){document.querySelectorAll('.pg').forEach(e=>e.classList.remove('show'));document.getElementById('p-'+p).classList.add('show');document.querySelectorAll('.tabs button,.nav button').forEach(b=>b.classList.toggle('active',b.dataset.p===p));window.scrollTo(0,0)}document.querySelectorAll('.tabs button,.nav button').forEach(b=>b.onclick=()=>show(b.dataset.p));function open(){let v=document.getElementById('gi').value.toLowerCase().replace(/[^a-z0-9]/g,'');if(['1977','777','echoamen','queenjessie','queen'].includes(v))document.getElementById('gate').classList.add('hide');else document.getElementById('gm').textContent='Incorrect code — try 1-9-7-7'}document.getElementById('go').onclick=open;document.getElementById('gq').onclick=()=>document.getElementById('gate').classList.add('hide');let on=true;document.getElementById('lb').onclick=()=>{on=!on;document.getElementById('ls').textContent=on?'● ON — Your business is protected':'○ OFF — Tap to protect';document.getElementById('li').textContent=on?'💡':'🔦'};document.getElementById('lk').onclick=()=>{let v=document.getElementById('li2').value.replace(/[^0-9]/g,'');document.getElementById('lm').textContent=(v==='1977'||v==='777')?'✅ Protection Verified — ECHO-AMEN':'❌ Incorrect — try 1-9-7-7'};document.getElementById('gl').onclick=()=>{let n=(document.getElementById('rn').value||'Leo').toLowerCase().replace(/[^a-z0-9]+/g,'-');document.getElementById('rl').textContent='https://hleo02837-arch.github.io/Cyberking-portal/?ref='+n+'-1977'};let s=0,e=0,c=0;document.getElementById('ds').onclick=()=>{s++;e+=23.1;c+=5;document.getElementById('sc').textContent=s;document.getElementById('en').textContent='$'+e.toFixed(2);document.getElementById('ck').textContent=c};function render(t){let el=document.getElementById('chart');el.innerHTML='';let data=[[1,12000,14500],[2,23000,28900],[4,41000,58200],[8,52400,88700],[16,61800,110500]];data.forEach(d=>{let h1=Math.round(d[1]/110500*110),h2=Math.round(d[2]/110500*110);let col=document.createElement('div');col.className='col';col.innerHTML='<div class="bar f" style="height:'+h2+'px">
+</div>
+<div class="bar m" style="height:'+h1+'px">
+</div>
+<span>'+d[0]+'T</span>';el.appendChild(col)});let cur=data.find(d=>d[0]===t)||data[3];let m=cur[1],f=cur[2];if(![1,2,4,8,16].includes(t)){m=Math.round(52400*t/8);f=Math.round(88700*t/8)}document.getElementById('tv').textContent=t;document.getElementById('fv').textContent=f.toLocaleString();document.getElementById('fv2').textContent=f.toLocaleString();document.getElementById('mv').textContent=m.toLocaleString();document.getElementById('gn').textContent='+'+((f-m)/m*100).toFixed(1)+'%'}render(8);document.getElementById('ts').oninput=e=>render(+e.target.value);</script>
+<script>(function(){var loc=location.href.replace(/#.*$/,"");var ATTR_NAMES=["data-product-id","data-productid","data-product_id","product-id","productid","product_id","data-source-entity-id","source-entity-id","source_entity_id","data-product","data-metadata","data-meta"];var DATASET_KEYS=["productId","productid","product_id","sourceEntityId","sourceentityid","source_entity_id","product","metadata","meta"];function readProductId(value){if(typeof value!=="string"||value.length===0)return null;if(/^[0-9]{6,}$/.test(value))return value;var match=value.match(/(?:product(?:_|-)?id|source(?:_|-)?entity(?:_|-)?id)["'=:\s]+([0-9]{6,})/i);return match?match[1]:null}function extractProductId(start){for(var node=start;node&&node!==document.body;node=node.parentElement){for(var i=0;i<ATTR_NAMES.length;i++){var attrValue=node.getAttribute&&node.getAttribute(ATTR_NAMES[i]);var attrProductId=readProductId(attrValue);if(attrProductId)return attrProductId}var dataset=node.dataset||null;if(dataset){for(var j=0;j<DATASET_KEYS.length;j++){var dataValue=dataset[DATASET_KEYS[j]];var dataProductId=readProductId(dataValue);if(dataProductId)return dataProductId}}}return null}function isInlineMediaSlotElement(node){return !!(node&&node.getAttribute&&node.getAttribute("data-clippy-inline-media-slot")!==null)}function findInlineMediaSlot(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(isInlineMediaSlotElement(node))return node}return null}function readInlineMediaUrl(node){if(!node)return null;return node.getAttribute&&((node.getAttribute("data-clippy-inline-media-url")||node.getAttribute("data-url")||node.getAttribute("data_url")))||node.href||null}function stripHash(url){return String(url).replace(/#.*$/,"")}function urlsMatch(a,b){if(!a||!b)return false;try{return stripHash(new URL(a,loc).href)===stripHash(new URL(b,loc).href)}catch(_){return stripHash(a)===stripHash(b)}}function isFirstPartyReelUrl(value){try{var url=new URL(value,loc);if(url.protocol!=="https:")return false;var host=url.hostname.toLowerCase();var supported=host==="instagram.com"||host.endsWith(".instagram.com")||host==="facebook.com"||host.endsWith(".facebook.com");return supported&&/\/reels?\//i.test(url.pathname)}catch(_){return false}}function isInlineMediaUrlClick(node,href){var slot=findInlineMediaSlot(node);if(!slot)return false;var slotUrl=readInlineMediaUrl(slot);if(slotUrl)return urlsMatch(href,slotUrl);return isFirstPartyReelUrl(href)}function findDataHref(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(node.getAttribute){var href=node.getAttribute("data-href")||node.getAttribute("data-url");if(href)return{href:href,node:node}}}return null}var nativeOpen=window.open;window.open=function(url){if(parent!==window&&typeof url==="string"&&/^https?:\/\//.test(url)){parent.postMessage({type:"ecto:usercontent-link-click",href:url},"*");return null}return nativeOpen?nativeOpen.apply(window,arguments):null};document.addEventListener("click",function(e){var target=e.target instanceof Element?e.target:null;if(!target)return;if(parent===window)return;var a=target.closest?target.closest("a[href]"):null;if(a&&a.href&&/^https?:\/\//.test(a.href)&&a.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(a,a.href))return;var productId=extractProductId(target)||extractProductId(a);if(productId){e.preventDefault();parent.postMessage({type:"ecto-artifact-link-click",productId:productId},"*");return}e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:a.href},"*");return}var dataHref=findDataHref(target);if(dataHref&&/^https?:\/\//.test(dataHref.href)&&dataHref.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(dataHref.node,dataHref.href))return;e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:dataHref.href},"*")}},true)})();</script><script>(function(){var FOCUS_TYPE="ecto:artifact-focus-request";var CLOSE_TYPE="ecto:artifact-close-request";function focusArtifactDocument(){var body=document.body;if(!body)return;try{window.focus();}catch(e){}if(!body.hasAttribute("tabindex"))body.setAttribute("tabindex","-1");try{body.focus({preventScroll:true});}catch(e){try{body.focus();}catch(e2){}}}window.addEventListener("message",function(event){if(event.source!==window.parent)return;var data=event.data;if(!data||typeof data!=="object"||data.type!==FOCUS_TYPE)return;if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",focusArtifactDocument,{once:true});return;}focusArtifactDocument();});window.addEventListener("keydown",function(event){if(event.key!=="Escape")return;window.setTimeout(function(){if(event.defaultPrevented)return;window.parent.postMessage({type:CLOSE_TYPE},"*");},0);});})();</script></body>
 </html>
